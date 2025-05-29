@@ -193,7 +193,7 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.Location = new System.Drawing.Point(510, 163);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(85, 50);
+            this.iconButton5.Size = new System.Drawing.Size(120, 50);
             this.iconButton5.TabIndex = 28;
             this.iconButton5.Text = "Reports/Alerts";
             this.iconButton5.UseVisualStyleBackColor = true;
