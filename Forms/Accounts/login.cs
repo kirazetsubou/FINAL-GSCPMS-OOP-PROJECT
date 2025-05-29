@@ -36,5 +36,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             forgotPassForm.Show();
             this.Hide();
         }
+
+        private void hopePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

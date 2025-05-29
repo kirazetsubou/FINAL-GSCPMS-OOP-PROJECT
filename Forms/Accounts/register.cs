@@ -104,5 +104,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             loginForm.Show();
             this.Hide();
         }
+
+        private void rPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
