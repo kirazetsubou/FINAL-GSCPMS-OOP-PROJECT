@@ -209,7 +209,6 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             this.cmbBarangay.Size = new System.Drawing.Size(556, 36);
             this.cmbBarangay.TabIndex = 34;
             this.cmbBarangay.Text = "Select Brgy";
-           
             // 
             // reg2
             // 
