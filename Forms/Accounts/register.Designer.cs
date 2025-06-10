@@ -191,6 +191,7 @@
             this.hopePictureBox1.TabIndex = 2;
             this.hopePictureBox1.TabStop = false;
             this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.hopePictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.hopePictureBox1_MouseMove);
             // 
             // cuiColorPicker1
             // 
