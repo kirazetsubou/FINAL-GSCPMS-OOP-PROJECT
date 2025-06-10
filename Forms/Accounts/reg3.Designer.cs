@@ -38,7 +38,6 @@
             this.hopeTextBox4 = new ReaLTaiizor.Controls.HopeTextBox();
             this.hopeCheckBox1 = new ReaLTaiizor.Controls.HopeCheckBox();
             this.FoxBigLabel1 = new ReaLTaiizor.Controls.FoxBigLabel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // smallLabel3
@@ -74,7 +73,7 @@
             this.hopeTextBox3.Size = new System.Drawing.Size(530, 38);
             this.hopeTextBox3.TabIndex = 24;
             this.hopeTextBox3.TabStop = false;
-            this.hopeTextBox3.UseSystemPasswordChar = false;
+            this.hopeTextBox3.UseSystemPasswordChar = true;
             // 
             // hopeTextBox2
             // 
@@ -179,7 +178,7 @@
             this.hopeTextBox4.Size = new System.Drawing.Size(530, 38);
             this.hopeTextBox4.TabIndex = 26;
             this.hopeTextBox4.TabStop = false;
-            this.hopeTextBox4.UseSystemPasswordChar = false;
+            this.hopeTextBox4.UseSystemPasswordChar = true;
             // 
             // hopeCheckBox1
             // 
@@ -200,6 +199,7 @@
             this.hopeCheckBox1.TabIndex = 28;
             this.hopeCheckBox1.Text = "Show Password";
             this.hopeCheckBox1.UseVisualStyleBackColor = true;
+            this.hopeCheckBox1.CheckedChanged += new System.EventHandler(this.hopeCheckBox1_CheckedChanged);
             // 
             // FoxBigLabel1
             // 
@@ -215,27 +215,11 @@
             this.FoxBigLabel1.TabIndex = 14;
             this.FoxBigLabel1.Text = "Account Setup";
             // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Remove;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(527, 16);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(29, 28);
-            this.iconButton1.TabIndex = 29;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
             // reg3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.hopeCheckBox1);
             this.Controls.Add(this.smallLabel4);
             this.Controls.Add(this.hopeTextBox4);
@@ -264,6 +248,5 @@
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox4;
         private ReaLTaiizor.Controls.HopeCheckBox hopeCheckBox1;
         internal ReaLTaiizor.Controls.FoxBigLabel FoxBigLabel1;
-        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

@@ -18,5 +18,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             InitializeComponent();
         }
 
+        private void hopeCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            hopeTextBox3.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+            hopeTextBox4.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+        }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(register));
             this.btnBack = new ReaLTaiizor.Controls.HopeButton();
             this.btnNext = new ReaLTaiizor.Controls.HopeButton();
             this.btnRegister = new ReaLTaiizor.Controls.HopeButton();
@@ -214,6 +215,7 @@
             this.Controls.Add(this.smallLabel3);
             this.Controls.Add(this.rPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "register";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new ReaLTaiizor.Controls.Panel();
             this.rPanel2 = new GSPMS.RPanel();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
@@ -213,6 +214,7 @@
             this.hopeCheckBox1.TabIndex = 5;
             this.hopeCheckBox1.Text = "Show Password";
             this.hopeCheckBox1.UseVisualStyleBackColor = true;
+            this.hopeCheckBox1.CheckedChanged += new System.EventHandler(this.hopeCheckBox1_CheckedChanged);
             // 
             // smallLabel2
             // 
@@ -270,7 +272,7 @@
             this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(49, 104);
+            this.hopeTextBox1.Location = new System.Drawing.Point(47, 104);
             this.hopeTextBox1.MaxLength = 32767;
             this.hopeTextBox1.Multiline = false;
             this.hopeTextBox1.Name = "hopeTextBox1";
@@ -279,7 +281,7 @@
             this.hopeTextBox1.SelectedText = "";
             this.hopeTextBox1.SelectionLength = 0;
             this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(268, 38);
+            this.hopeTextBox1.Size = new System.Drawing.Size(270, 38);
             this.hopeTextBox1.TabIndex = 1;
             this.hopeTextBox1.TabStop = false;
             this.hopeTextBox1.UseSystemPasswordChar = false;
@@ -311,6 +313,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1920, 1040);
             this.MinimumSize = new System.Drawing.Size(190, 40);
             this.Name = "login";

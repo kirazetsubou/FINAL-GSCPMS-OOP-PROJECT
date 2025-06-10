@@ -86,5 +86,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+        private void hopeCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            hopeTextBox2.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+        }
     }
 }
