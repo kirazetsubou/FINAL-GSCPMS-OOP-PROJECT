@@ -293,6 +293,9 @@
     <EmbeddedResource Include="Forms\Patients\SchedPatient.resx">
       <DependentUpon>SchedPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
