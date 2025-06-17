@@ -17,34 +17,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         {
             InitializeComponent();
         }
-        public bool ValidateInput()
-        {
-            if (string.IsNullOrWhiteSpace(Fname.Text))
-            {
-                MessageBox.Show(" is required.");
-                Fname.Focus();
-                return false;
-            }
 
-            if (string.IsNullOrWhiteSpace(Lname.Text))
-            {
-                MessageBox.Show("is required.");
-                Lname.Focus();
-                return false;
-            }
-
-            if (string.IsNullOrWhiteSpace(MI.Text))
-            {
-                MessageBox.Show("Email is required.");
-                MI.Focus();
-                return false;
-            }
-
-            return true;
-
-        }
-        // Optional: Public properties to access input values
-        public string Firstname => Fname.Text.Trim();
-        public string Lastname => Lname.Text.Trim();
     }
+
 }

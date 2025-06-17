@@ -82,15 +82,38 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         {
             if (currentStep == 1)
             {
-                currentStep = 2;
-                OpenChildForm(reg2Control);
-         
+               
+                bool isValid = ValidateAllControls(currentChildForm);
+
+                if (isValid)
+                {
+                    // Proceed with registration logic
+                    MessageBox.Show("All fields are valid. Proceeding with registration.");
+                    currentStep = 2;
+                    OpenChildForm(reg2Control);
+                }
+                else
+                {
+                    MessageBox.Show("Please fill in all required fields.");
+                }
+
             }
             else if (currentStep == 2)
             {
-                currentStep = 3;
-                OpenChildForm(reg3Control);
+                bool isValid = ValidateAllControls(currentChildForm);
+                if (isValid)
+                {
+                    // Proceed with registration logic
+                    MessageBox.Show("All fields are valid. Proceeding with registration.");
+                    currentStep = 3;
+                    OpenChildForm(reg3Control);
+                }
+                else
+                {
+                    MessageBox.Show("Please fill in all required fields.");
+                }
             }
+           
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -161,7 +184,72 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-     
+            bool isValid = ValidateAllControls(currentChildForm);
+
+            if (isValid)
+            {
+                // Proceed with registration logic
+                MessageBox.Show("All fields are valid. Proceeding with registration.");
+            }
+            else
+            {
+                MessageBox.Show("Please fill in all required fields.");
+            }
+
         }
+        private bool ValidateAllControls(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is TextBox textBox)
+                {
+                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                    {
+                        textBox.BackColor = Color.LightPink;
+                        return false;
+                    }
+                    else
+                    {
+                        textBox.BackColor = SystemColors.Window;
+                    }
+                }
+                else if (c is ComboBox comboBox)
+                {
+                    if (comboBox.SelectedIndex == -1)
+                    {
+                        comboBox.BackColor = Color.LightPink;
+                        return false;
+                    }
+                    else
+                    {
+                        comboBox.BackColor = SystemColors.Window;
+                    }
+                }
+                else if (c is DateTimePicker dateTimePicker)
+                {
+                    // Optional: add date range validation
+                    if (dateTimePicker.Value == null)
+                    {
+                        dateTimePicker.CalendarForeColor = Color.Red;
+                        return false;
+                    }
+                    else
+                    {
+                        dateTimePicker.CalendarForeColor = SystemColors.WindowText;
+                    }
+                }
+
+                // Recursively validate child controls (e.g., inside panels)
+                if (c.HasChildren)
+                {
+                    if (!ValidateAllControls(c))
+                        return false;
+                }
+            }
+
+            return true;
+        }
+
+
     }
 }
