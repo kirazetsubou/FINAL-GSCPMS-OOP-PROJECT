@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
+namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Patients
 {
-    public partial class Doctordashboard : UserControl
+    public partial class patientDB : Form
     {
-        public Doctordashboard()
+        public patientDB()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
 {
-    public partial class Doc1 : UserControl
+    public partial class Docdashboard : Form
     {
-        public Doc1()
+        public Docdashboard()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Patients
 {
-    public partial class SchedPatient : UserControl
+    public partial class Patient2 : UserControl
     {
-        public SchedPatient()
+        public Patient2()
         {
             InitializeComponent();
         }

@@ -197,29 +197,41 @@
     <Compile Include="Forms\Admin\admindashboard.Designer.cs">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Doctor\Doc1.cs">
+    <Compile Include="Forms\Doctor\Doctor2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Doctor\Doc1.Designer.cs">
-      <DependentUpon>Doc1.cs</DependentUpon>
+    <Compile Include="Forms\Doctor\Doctor2.Designer.cs">
+      <DependentUpon>Doctor2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Doctor\Doctordashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Doctor\Doctordashboard.Designer.cs">
-      <DependentUpon>Doctordashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Patients\Patients.cs">
+    <Compile Include="Forms\Doctor\Docdashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Patients\Patients.Designer.cs">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <Compile Include="Forms\Doctor\Docdashboard.Designer.cs">
+      <DependentUpon>Docdashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Patients\SchedPatient.cs">
+    <Compile Include="Forms\Doctor\Doctor1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Patients\SchedPatient.Designer.cs">
-      <DependentUpon>SchedPatient.cs</DependentUpon>
+    <Compile Include="Forms\Doctor\Doctor1.Designer.cs">
+      <DependentUpon>Doctor1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\Patient1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\Patient1.Designer.cs">
+      <DependentUpon>Patient1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\patientDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\patientDB.Designer.cs">
+      <DependentUpon>patientDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\Patient2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\Patient2.Designer.cs">
+      <DependentUpon>Patient2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -271,17 +283,23 @@
     <EmbeddedResource Include="Forms\Admin\admindashboard.resx">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Doctor\Doc1.resx">
-      <DependentUpon>Doc1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Doctor\Doctor2.resx">
+      <DependentUpon>Doctor2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Doctor\Doctordashboard.resx">
-      <DependentUpon>Doctordashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Doctor\Docdashboard.resx">
+      <DependentUpon>Docdashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Patients\Patients.resx">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Doctor\Doctor1.resx">
+      <DependentUpon>Doctor1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Patients\SchedPatient.resx">
-      <DependentUpon>SchedPatient.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Patients\Patient1.resx">
+      <DependentUpon>Patient1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\patientDB.resx">
+      <DependentUpon>patientDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\Patient2.resx">
+      <DependentUpon>Patient2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

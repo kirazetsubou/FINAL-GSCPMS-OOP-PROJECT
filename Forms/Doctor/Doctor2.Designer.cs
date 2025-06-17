@@ -1,6 +1,6 @@
 ﻿namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
 {
-    partial class Doctordashboard
+    partial class Doctor2
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,24 +29,23 @@
         private void InitializeComponent()
         {
             this.displaypanel = new GSPMS.RPanel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rPanel1 = new GSPMS.RPanel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.rPanel4 = new GSPMS.RPanel();
             this.rPanel3 = new GSPMS.RPanel();
             this.rPanel2 = new GSPMS.RPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.rPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // displaypanel
@@ -54,61 +53,11 @@
             this.displaypanel.BackColor = System.Drawing.Color.LightGray;
             this.displaypanel.BorderColor = System.Drawing.Color.White;
             this.displaypanel.Edge = 20;
-            this.displaypanel.Location = new System.Drawing.Point(1051, 188);
+            this.displaypanel.Location = new System.Drawing.Point(1055, 32);
             this.displaypanel.Margin = new System.Windows.Forms.Padding(4);
             this.displaypanel.Name = "displaypanel";
             this.displaypanel.Size = new System.Drawing.Size(200, 124);
             this.displaypanel.TabIndex = 31;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(39, 477);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(85, 50);
-            this.iconButton4.TabIndex = 4;
-            this.iconButton4.Text = "iconButton4";
-            this.iconButton4.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(39, 404);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(85, 50);
-            this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(37, 335);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(85, 50);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // hopePictureBox1
-            // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(0, 6);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(298, 181);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.hopePictureBox1.TabIndex = 0;
-            this.hopePictureBox1.TabStop = false;
-            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // label4
             // 
@@ -157,36 +106,14 @@
             this.rPanel1.Size = new System.Drawing.Size(300, 190);
             this.rPanel1.TabIndex = 5;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(39, 264);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(85, 50);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(392, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(218, 56);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Welcome, Dr.";
-            // 
             // rPanel4
             // 
             this.rPanel4.BackColor = System.Drawing.Color.Gainsboro;
             this.rPanel4.BorderColor = System.Drawing.Color.White;
             this.rPanel4.Edge = 20;
-            this.rPanel4.Location = new System.Drawing.Point(420, 525);
+            this.rPanel4.Location = new System.Drawing.Point(409, 352);
             this.rPanel4.Name = "rPanel4";
-            this.rPanel4.Size = new System.Drawing.Size(859, 253);
+            this.rPanel4.Size = new System.Drawing.Size(859, 301);
             this.rPanel4.TabIndex = 34;
             // 
             // rPanel3
@@ -194,7 +121,7 @@
             this.rPanel3.BackColor = System.Drawing.Color.LightGray;
             this.rPanel3.BorderColor = System.Drawing.Color.White;
             this.rPanel3.Edge = 20;
-            this.rPanel3.Location = new System.Drawing.Point(433, 189);
+            this.rPanel3.Location = new System.Drawing.Point(409, 32);
             this.rPanel3.Name = "rPanel3";
             this.rPanel3.Size = new System.Drawing.Size(448, 266);
             this.rPanel3.TabIndex = 33;
@@ -204,7 +131,7 @@
             this.rPanel2.BackColor = System.Drawing.Color.LightGray;
             this.rPanel2.BorderColor = System.Drawing.Color.White;
             this.rPanel2.Edge = 20;
-            this.rPanel2.Location = new System.Drawing.Point(1051, 331);
+            this.rPanel2.Location = new System.Drawing.Point(1055, 175);
             this.rPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.rPanel2.Name = "rPanel2";
             this.rPanel2.Size = new System.Drawing.Size(200, 124);
@@ -228,24 +155,84 @@
             this.panel1.Size = new System.Drawing.Size(333, 838);
             this.panel1.TabIndex = 30;
             // 
-            // Doctordashboard
+            // hopePictureBox1
+            // 
+            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
+            this.hopePictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.hopePictureBox1.Name = "hopePictureBox1";
+            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.hopePictureBox1.Size = new System.Drawing.Size(298, 181);
+            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.hopePictureBox1.TabIndex = 0;
+            this.hopePictureBox1.TabStop = false;
+            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(39, 477);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(85, 50);
+            this.iconButton4.TabIndex = 4;
+            this.iconButton4.Text = "iconButton4";
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(39, 404);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(85, 50);
+            this.iconButton3.TabIndex = 3;
+            this.iconButton3.Text = "iconButton3";
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(37, 335);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(85, 50);
+            this.iconButton2.TabIndex = 2;
+            this.iconButton2.Text = "iconButton2";
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(39, 264);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(85, 50);
+            this.iconButton1.TabIndex = 1;
+            this.iconButton1.Text = "iconButton1";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // Doc1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.displaypanel);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.rPanel4);
             this.Controls.Add(this.rPanel3);
             this.Controls.Add(this.rPanel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Doctordashboard";
+            this.Name = "Doc1";
             this.Size = new System.Drawing.Size(1302, 838);
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.rPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -262,7 +249,6 @@
         private System.Windows.Forms.Label label1;
         private GSPMS.RPanel rPanel1;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Label label5;
         private GSPMS.RPanel rPanel4;
         private GSPMS.RPanel rPanel3;
         private GSPMS.RPanel rPanel2;
