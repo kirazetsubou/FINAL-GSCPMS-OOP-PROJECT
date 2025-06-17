@@ -9,6 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System;
+using System.Data.SqlClient;
+
 
 namespace FINAL_GSCPMS_OOP_PROJECT
 {
@@ -16,6 +19,8 @@ namespace FINAL_GSCPMS_OOP_PROJECT
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
+        string connectionString = "Server=YOUR_SERVER_NAME;Database=SimpleLoginDB;Trusted_Connection=True;";
+
 
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);

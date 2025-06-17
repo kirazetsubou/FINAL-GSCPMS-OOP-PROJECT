@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
+namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Receptionist
 {
-    public partial class admindashboard : UserControl
+    public partial class Form1 : Form
     {
-        public admindashboard()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void displaypanel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
