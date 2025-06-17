@@ -17,7 +17,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new admin());
         }
     }
 }
