@@ -105,6 +105,7 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.TextColor = System.Drawing.Color.White;
             this.btnRegister.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // trackerProgress
             // 

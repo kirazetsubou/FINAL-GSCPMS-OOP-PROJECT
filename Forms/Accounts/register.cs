@@ -84,6 +84,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             {
                 currentStep = 2;
                 OpenChildForm(reg2Control);
+         
             }
             else if (currentStep == 2)
             {
@@ -156,6 +157,11 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+     
         }
     }
 }
