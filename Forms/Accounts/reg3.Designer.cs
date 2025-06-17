@@ -46,9 +46,10 @@
             this.smallLabel3.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel3.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel3.Location = new System.Drawing.Point(26, 196);
+            this.smallLabel3.Location = new System.Drawing.Point(35, 241);
+            this.smallLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.smallLabel3.Name = "smallLabel3";
-            this.smallLabel3.Size = new System.Drawing.Size(56, 13);
+            this.smallLabel3.Size = new System.Drawing.Size(67, 19);
             this.smallLabel3.TabIndex = 25;
             this.smallLabel3.Text = "Password";
             // 
@@ -61,7 +62,8 @@
             this.hopeTextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox3.Hint = "";
-            this.hopeTextBox3.Location = new System.Drawing.Point(26, 212);
+            this.hopeTextBox3.Location = new System.Drawing.Point(35, 261);
+            this.hopeTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hopeTextBox3.MaxLength = 32767;
             this.hopeTextBox3.Multiline = false;
             this.hopeTextBox3.Name = "hopeTextBox3";
@@ -70,7 +72,7 @@
             this.hopeTextBox3.SelectedText = "";
             this.hopeTextBox3.SelectionLength = 0;
             this.hopeTextBox3.SelectionStart = 0;
-            this.hopeTextBox3.Size = new System.Drawing.Size(530, 38);
+            this.hopeTextBox3.Size = new System.Drawing.Size(707, 43);
             this.hopeTextBox3.TabIndex = 24;
             this.hopeTextBox3.TabStop = false;
             this.hopeTextBox3.UseSystemPasswordChar = true;
@@ -84,7 +86,8 @@
             this.hopeTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox2.Hint = "";
-            this.hopeTextBox2.Location = new System.Drawing.Point(26, 152);
+            this.hopeTextBox2.Location = new System.Drawing.Point(35, 187);
+            this.hopeTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hopeTextBox2.MaxLength = 32767;
             this.hopeTextBox2.Multiline = false;
             this.hopeTextBox2.Name = "hopeTextBox2";
@@ -93,7 +96,7 @@
             this.hopeTextBox2.SelectedText = "";
             this.hopeTextBox2.SelectionLength = 0;
             this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(530, 38);
+            this.hopeTextBox2.Size = new System.Drawing.Size(707, 43);
             this.hopeTextBox2.TabIndex = 23;
             this.hopeTextBox2.TabStop = false;
             this.hopeTextBox2.UseSystemPasswordChar = false;
@@ -104,9 +107,10 @@
             this.smallLabel2.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel2.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel2.Location = new System.Drawing.Point(26, 130);
+            this.smallLabel2.Location = new System.Drawing.Point(35, 160);
+            this.smallLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.smallLabel2.Name = "smallLabel2";
-            this.smallLabel2.Size = new System.Drawing.Size(91, 13);
+            this.smallLabel2.Size = new System.Drawing.Size(111, 19);
             this.smallLabel2.TabIndex = 22;
             this.smallLabel2.Text = "Contact Number";
             // 
@@ -116,9 +120,10 @@
             this.smallLabel1.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel1.Location = new System.Drawing.Point(26, 62);
+            this.smallLabel1.Location = new System.Drawing.Point(35, 76);
+            this.smallLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.smallLabel1.Name = "smallLabel1";
-            this.smallLabel1.Size = new System.Drawing.Size(34, 13);
+            this.smallLabel1.Size = new System.Drawing.Size(41, 19);
             this.smallLabel1.TabIndex = 21;
             this.smallLabel1.Text = "Email";
             // 
@@ -131,7 +136,8 @@
             this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(26, 81);
+            this.hopeTextBox1.Location = new System.Drawing.Point(35, 100);
+            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hopeTextBox1.MaxLength = 32767;
             this.hopeTextBox1.Multiline = false;
             this.hopeTextBox1.Name = "hopeTextBox1";
@@ -140,7 +146,7 @@
             this.hopeTextBox1.SelectedText = "";
             this.hopeTextBox1.SelectionLength = 0;
             this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(530, 38);
+            this.hopeTextBox1.Size = new System.Drawing.Size(707, 43);
             this.hopeTextBox1.TabIndex = 20;
             this.hopeTextBox1.TabStop = false;
             this.hopeTextBox1.UseSystemPasswordChar = false;
@@ -151,9 +157,10 @@
             this.smallLabel4.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel4.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel4.Location = new System.Drawing.Point(26, 265);
+            this.smallLabel4.Location = new System.Drawing.Point(35, 326);
+            this.smallLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.smallLabel4.Name = "smallLabel4";
-            this.smallLabel4.Size = new System.Drawing.Size(100, 13);
+            this.smallLabel4.Size = new System.Drawing.Size(120, 19);
             this.smallLabel4.TabIndex = 27;
             this.smallLabel4.Text = "Confirm Password";
             // 
@@ -166,7 +173,8 @@
             this.hopeTextBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeTextBox4.Hint = "";
-            this.hopeTextBox4.Location = new System.Drawing.Point(26, 281);
+            this.hopeTextBox4.Location = new System.Drawing.Point(35, 346);
+            this.hopeTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hopeTextBox4.MaxLength = 32767;
             this.hopeTextBox4.Multiline = false;
             this.hopeTextBox4.Name = "hopeTextBox4";
@@ -175,7 +183,7 @@
             this.hopeTextBox4.SelectedText = "";
             this.hopeTextBox4.SelectionLength = 0;
             this.hopeTextBox4.SelectionStart = 0;
-            this.hopeTextBox4.Size = new System.Drawing.Size(530, 38);
+            this.hopeTextBox4.Size = new System.Drawing.Size(707, 43);
             this.hopeTextBox4.TabIndex = 26;
             this.hopeTextBox4.TabStop = false;
             this.hopeTextBox4.UseSystemPasswordChar = true;
@@ -193,9 +201,10 @@
             this.hopeCheckBox1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
             this.hopeCheckBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hopeCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox1.Location = new System.Drawing.Point(26, 325);
+            this.hopeCheckBox1.Location = new System.Drawing.Point(35, 400);
+            this.hopeCheckBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hopeCheckBox1.Name = "hopeCheckBox1";
-            this.hopeCheckBox1.Size = new System.Drawing.Size(113, 20);
+            this.hopeCheckBox1.Size = new System.Drawing.Size(129, 20);
             this.hopeCheckBox1.TabIndex = 28;
             this.hopeCheckBox1.Text = "Show Password";
             this.hopeCheckBox1.UseVisualStyleBackColor = true;
@@ -208,16 +217,17 @@
             this.FoxBigLabel1.ForeColor = System.Drawing.Color.Black;
             this.FoxBigLabel1.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
             this.FoxBigLabel1.LineColor = System.Drawing.Color.Black;
-            this.FoxBigLabel1.Location = new System.Drawing.Point(191, 3);
+            this.FoxBigLabel1.Location = new System.Drawing.Point(255, 4);
+            this.FoxBigLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FoxBigLabel1.Name = "FoxBigLabel1";
             this.FoxBigLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.FoxBigLabel1.Size = new System.Drawing.Size(196, 41);
+            this.FoxBigLabel1.Size = new System.Drawing.Size(261, 50);
             this.FoxBigLabel1.TabIndex = 14;
             this.FoxBigLabel1.Text = "Account Setup";
             // 
             // reg3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.Controls.Add(this.hopeCheckBox1);
@@ -230,8 +240,9 @@
             this.Controls.Add(this.smallLabel1);
             this.Controls.Add(this.hopeTextBox1);
             this.Controls.Add(this.FoxBigLabel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "reg3";
-            this.Size = new System.Drawing.Size(602, 372);
+            this.Size = new System.Drawing.Size(803, 458);
             this.ResumeLayout(false);
             this.PerformLayout();
 

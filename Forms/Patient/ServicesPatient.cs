@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Patient
 {
-    public partial class Form1 : Form
+    public partial class ServicesPatient : Form
     {
-        public Form1()
+        public ServicesPatient()
         {
             InitializeComponent();
         }

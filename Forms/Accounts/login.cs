@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
 namespace FINAL_GSCPMS_OOP_PROJECT
@@ -19,7 +20,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-        string connectionString = "Server=YOUR_SERVER_NAME;Database=SimpleLoginDB;Trusted_Connection=True;";
+        string connectionString = "Server=192.168.100.226,1433;Database=Employee;Trusted_Connection=True;";
 
 
         [DllImportAttribute("user32.dll")]
@@ -94,7 +95,40 @@ namespace FINAL_GSCPMS_OOP_PROJECT
 
         private void hopeCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            hopeTextBox2.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+            Password.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Employees WHERE Username = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@username", Username.Text);
+                cmd.Parameters.AddWithValue("@password", Password.Text);
+
+                int result = (int)cmd.ExecuteScalar();
+                if (result > 0)
+                {
+                    MessageBox.Show("Login successful!");
+                    // Proceed to next form or dashboard
+                }
+                else
+                {
+                    MessageBox.Show("Invalid credentials.");
+                }
+            }
+        }
+
+        private void hopeTextBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

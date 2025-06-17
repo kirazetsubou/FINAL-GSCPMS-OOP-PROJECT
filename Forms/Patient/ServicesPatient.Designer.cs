@@ -1,6 +1,6 @@
-﻿namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Admin
+﻿namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Patient
 {
-    partial class admin
+    partial class ServicesPatient
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -41,18 +42,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(234, 228);
-            this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel1
             // 
@@ -60,7 +52,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 4);
+            this.panel1.Location = new System.Drawing.Point(-7, -20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1627, 76);
             this.panel1.TabIndex = 8;
@@ -99,70 +91,77 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(72, 62);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1483, 286);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(234, 228);
+            this.panel3.TabIndex = 0;
+            // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(125, 615);
+            this.panel10.Location = new System.Drawing.Point(116, 591);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(172, 152);
             this.panel10.TabIndex = 16;
             // 
             // panel9
             // 
-            this.panel9.Location = new System.Drawing.Point(1359, 418);
+            this.panel9.Location = new System.Drawing.Point(1350, 394);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(172, 152);
             this.panel9.TabIndex = 15;
             // 
             // panel8
             // 
-            this.panel8.Location = new System.Drawing.Point(1105, 418);
+            this.panel8.Location = new System.Drawing.Point(1096, 394);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(172, 152);
             this.panel8.TabIndex = 14;
             // 
             // panel7
             // 
-            this.panel7.Location = new System.Drawing.Point(851, 418);
+            this.panel7.Location = new System.Drawing.Point(842, 394);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(172, 152);
             this.panel7.TabIndex = 13;
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(606, 418);
+            this.panel6.Location = new System.Drawing.Point(597, 394);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(172, 152);
             this.panel6.TabIndex = 12;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(361, 418);
+            this.panel5.Location = new System.Drawing.Point(352, 394);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(172, 152);
             this.panel5.TabIndex = 11;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(125, 418);
+            this.panel4.Location = new System.Drawing.Point(116, 394);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(172, 152);
             this.panel4.TabIndex = 10;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 86);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1483, 286);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // admin
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1631, 770);
+            this.ClientSize = new System.Drawing.Size(1613, 723);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -170,14 +169,9 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "admin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "admin";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.admin_Load);
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -187,12 +181,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
@@ -200,6 +195,5 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

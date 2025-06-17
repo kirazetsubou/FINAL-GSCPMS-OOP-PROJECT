@@ -21,5 +21,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

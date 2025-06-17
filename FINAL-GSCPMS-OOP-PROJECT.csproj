@@ -180,12 +180,6 @@
     <Compile Include="Forms\Accounts\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin\admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin\admin.Designer.cs">
-      <DependentUpon>admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Admin\admindashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -210,11 +204,11 @@
     <Compile Include="Forms\Doctor\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Patient\Form1.cs">
+    <Compile Include="Forms\Patient\ServicesPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Patient\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Patient\ServicesPatient.Designer.cs">
+      <DependentUpon>ServicesPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Patient\UserControl1.cs">
       <SubType>UserControl</SubType>
@@ -278,20 +272,23 @@
     <EmbeddedResource Include="Forms\Accounts\register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin\admin.resx">
-      <DependentUpon>admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\admindashboard.resx">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Doctor\Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctor\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patients\Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patients\SchedPatient.resx">
       <DependentUpon>SchedPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patient\ServicesPatient.resx">
+      <DependentUpon>ServicesPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
