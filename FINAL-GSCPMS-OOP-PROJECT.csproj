@@ -96,6 +96,12 @@
     <Compile Include="Classes\Round\URPanel.Designer.cs">
       <DependentUpon>URPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\reg1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\reg1.Designer.cs">
+      <DependentUpon>reg1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\admindashboardss.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,12 +162,6 @@
     <Compile Include="Forms\Accounts\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\reg1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Accounts\reg1.Designer.cs">
-      <DependentUpon>reg1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Accounts\reg2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +191,12 @@
     </Compile>
     <Compile Include="Forms\Admin\admindashboard.Designer.cs">
       <DependentUpon>admindashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctor\Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctor\Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Doctor\Form1.cs">
       <SubType>Form</SubType>
@@ -230,6 +236,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Accounts\reg1.resx">
+      <DependentUpon>reg1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\admindashboardss.resx">
       <DependentUpon>admindashboardss.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,9 +269,6 @@
     <EmbeddedResource Include="Forms\Accounts\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\reg1.resx">
-      <DependentUpon>reg1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts\reg2.resx">
       <DependentUpon>reg2.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +283,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\admindashboard.resx">
       <DependentUpon>admindashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctor\Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\SchedPatient.resx">
+      <DependentUpon>SchedPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
