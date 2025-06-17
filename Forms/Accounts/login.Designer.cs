@@ -66,7 +66,6 @@
             this.panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.panel1.TabIndex = 0;
             this.panel1.Text = "panel1";
-            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // rPanel2
