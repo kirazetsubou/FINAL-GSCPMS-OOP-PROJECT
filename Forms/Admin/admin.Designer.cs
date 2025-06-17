@@ -28,178 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
+            this.cuiPictureBox1 = new CuoreUI.Controls.cuiPictureBox();
+            this.foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton3 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton4 = new ReaLTaiizor.Controls.ForeverButton();
             this.SuspendLayout();
             // 
-            // panel3
+            // cuiGradientPanel1
             // 
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(234, 228);
-            this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.cuiGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cuiGradientPanel1.GradientAngle = 0F;
+            this.cuiGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.cuiGradientPanel1.Name = "cuiGradientPanel1";
+            this.cuiGradientPanel1.OutlineThickness = 1F;
+            this.cuiGradientPanel1.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.PanelColor2 = System.Drawing.Color.Transparent;
+            this.cuiGradientPanel1.PanelOutlineColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.PanelOutlineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiGradientPanel1.Size = new System.Drawing.Size(250, 768);
+            this.cuiGradientPanel1.TabIndex = 0;
             // 
-            // panel1
+            // cuiPictureBox1
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1627, 76);
-            this.panel1.TabIndex = 8;
+            this.cuiPictureBox1.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._473571710_1028756222602780_3200496696713397802_n_removebg_preview;
+            this.cuiPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cuiPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cuiPictureBox1.Content = null;
+            this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
+            this.cuiPictureBox1.Location = new System.Drawing.Point(28, 22);
+            this.cuiPictureBox1.Name = "cuiPictureBox1";
+            this.cuiPictureBox1.OutlineThickness = 1F;
+            this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
+            this.cuiPictureBox1.Rotation = 0;
+            this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPictureBox1.Size = new System.Drawing.Size(193, 134);
+            this.cuiPictureBox1.TabIndex = 1;
             // 
-            // panel2
+            // foreverButton1
             // 
-            this.panel2.Location = new System.Drawing.Point(1462, 11);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(52, 45);
-            this.panel2.TabIndex = 3;
+            this.foreverButton1.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton1.Location = new System.Drawing.Point(12, 198);
+            this.foreverButton1.Name = "foreverButton1";
+            this.foreverButton1.Rounded = false;
+            this.foreverButton1.Size = new System.Drawing.Size(238, 57);
+            this.foreverButton1.TabIndex = 2;
+            this.foreverButton1.Text = "Dashboard";
+            this.foreverButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // label3
+            // foreverButton2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1378, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.foreverButton2.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton2.Location = new System.Drawing.Point(12, 261);
+            this.foreverButton2.Name = "foreverButton2";
+            this.foreverButton2.Rounded = false;
+            this.foreverButton2.Size = new System.Drawing.Size(238, 57);
+            this.foreverButton2.TabIndex = 3;
+            this.foreverButton2.Text = "Manage Accounts";
+            this.foreverButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // label2
+            // foreverButton3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1289, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.foreverButton3.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton3.Location = new System.Drawing.Point(12, 324);
+            this.foreverButton3.Name = "foreverButton3";
+            this.foreverButton3.Rounded = false;
+            this.foreverButton3.Size = new System.Drawing.Size(238, 57);
+            this.foreverButton3.TabIndex = 4;
+            this.foreverButton3.Text = "Manage Services";
+            this.foreverButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // label1
+            // foreverButton4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1196, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(125, 615);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(172, 152);
-            this.panel10.TabIndex = 16;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(1359, 418);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(172, 152);
-            this.panel9.TabIndex = 15;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(1105, 418);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(172, 152);
-            this.panel8.TabIndex = 14;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(851, 418);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(172, 152);
-            this.panel7.TabIndex = 13;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(606, 418);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(172, 152);
-            this.panel6.TabIndex = 12;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(361, 418);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(172, 152);
-            this.panel5.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(125, 418);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(172, 152);
-            this.panel4.TabIndex = 10;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 86);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1483, 286);
-            this.flowLayoutPanel1.TabIndex = 9;
+            this.foreverButton4.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton4.Location = new System.Drawing.Point(12, 387);
+            this.foreverButton4.Name = "foreverButton4";
+            this.foreverButton4.Rounded = false;
+            this.foreverButton4.Size = new System.Drawing.Size(238, 57);
+            this.foreverButton4.TabIndex = 5;
+            this.foreverButton4.Text = "System Logs";
+            this.foreverButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
             // admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1631, 770);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.foreverButton4);
+            this.Controls.Add(this.foreverButton3);
+            this.Controls.Add(this.foreverButton2);
+            this.Controls.Add(this.foreverButton1);
+            this.Controls.Add(this.cuiPictureBox1);
+            this.Controls.Add(this.cuiGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.admin_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
+        private CuoreUI.Controls.cuiPictureBox cuiPictureBox1;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton1;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton2;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton3;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton4;
     }
 }
