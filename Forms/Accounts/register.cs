@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -189,7 +190,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             if (isValid)
             {
                 // Proceed with registration logic
-                MessageBox.Show("All fields are valid. Proceeding with registration.");
+                MessageBox.Show("All fields are valid. Proceed to login");
+                login Back = new login();
+                Back.Show();
+                this.Close();
             }
             else
             {
@@ -205,7 +209,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 {
                     if (string.IsNullOrWhiteSpace(textBox.Text))
                     {
-                        textBox.BackColor = Color.LightPink;
+                        textBox.BackColor = Color.Red;
                         return false;
                     }
                     else
@@ -217,7 +221,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 {
                     if (comboBox.SelectedIndex == -1)
                     {
-                        comboBox.BackColor = Color.LightPink;
+                        comboBox.BackColor = Color.Red;
                         return false;
                     }
                     else
