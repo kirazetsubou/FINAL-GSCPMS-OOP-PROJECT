@@ -76,10 +76,10 @@
             this.foreverButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.foreverButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverButton1.Location = new System.Drawing.Point(0, 197);
+            this.foreverButton1.Location = new System.Drawing.Point(0, 212);
             this.foreverButton1.Name = "foreverButton1";
             this.foreverButton1.Rounded = false;
-            this.foreverButton1.Size = new System.Drawing.Size(189, 57);
+            this.foreverButton1.Size = new System.Drawing.Size(189, 42);
             this.foreverButton1.TabIndex = 2;
             this.foreverButton1.Text = "Dashboard";
             this.foreverButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -90,10 +90,10 @@
             this.foreverButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.foreverButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverButton2.Location = new System.Drawing.Point(0, 261);
+            this.foreverButton2.Location = new System.Drawing.Point(0, 260);
             this.foreverButton2.Name = "foreverButton2";
             this.foreverButton2.Rounded = false;
-            this.foreverButton2.Size = new System.Drawing.Size(189, 57);
+            this.foreverButton2.Size = new System.Drawing.Size(189, 42);
             this.foreverButton2.TabIndex = 3;
             this.foreverButton2.Text = "Manage Accounts";
             this.foreverButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -104,10 +104,10 @@
             this.foreverButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.foreverButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverButton3.Location = new System.Drawing.Point(0, 323);
+            this.foreverButton3.Location = new System.Drawing.Point(0, 310);
             this.foreverButton3.Name = "foreverButton3";
             this.foreverButton3.Rounded = false;
-            this.foreverButton3.Size = new System.Drawing.Size(189, 57);
+            this.foreverButton3.Size = new System.Drawing.Size(189, 42);
             this.foreverButton3.TabIndex = 4;
             this.foreverButton3.Text = "Manage Services";
             this.foreverButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -118,10 +118,10 @@
             this.foreverButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
             this.foreverButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.foreverButton4.Location = new System.Drawing.Point(0, 387);
+            this.foreverButton4.Location = new System.Drawing.Point(0, 362);
             this.foreverButton4.Name = "foreverButton4";
             this.foreverButton4.Rounded = false;
-            this.foreverButton4.Size = new System.Drawing.Size(189, 57);
+            this.foreverButton4.Size = new System.Drawing.Size(189, 42);
             this.foreverButton4.TabIndex = 5;
             this.foreverButton4.Text = "System Logs";
             this.foreverButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
@@ -149,7 +149,7 @@
             this.cuiPanel2.PanelColor = System.Drawing.Color.Cyan;
             this.cuiPanel2.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel2.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPanel2.Size = new System.Drawing.Size(1177, 66);
+            this.cuiPanel2.Size = new System.Drawing.Size(1177, 80);
             this.cuiPanel2.TabIndex = 7;
             // 
             // admin
