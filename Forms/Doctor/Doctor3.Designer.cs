@@ -53,6 +53,8 @@
             this.dungeonLabel8 = new ReaLTaiizor.Controls.DungeonLabel();
             this.cuiPanel7 = new CuoreUI.Controls.cuiPanel();
             this.cuiPanel8 = new CuoreUI.Controls.cuiPanel();
+            this.cuiPanel9 = new CuoreUI.Controls.cuiPanel();
+            this.cuiPanel10 = new CuoreUI.Controls.cuiPanel();
             this.cuiPanel1.SuspendLayout();
             this.cuiPanel2.SuspendLayout();
             this.cuiPanel3.SuspendLayout();
@@ -60,6 +62,8 @@
             this.cuiPanel5.SuspendLayout();
             this.cuiPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.cuiPanel7.SuspendLayout();
+            this.cuiPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // cyberButton1
@@ -408,10 +412,11 @@
             // 
             // cuiPanel7
             // 
+            this.cuiPanel7.Controls.Add(this.cuiPanel9);
             this.cuiPanel7.Location = new System.Drawing.Point(42, 27);
             this.cuiPanel7.Name = "cuiPanel7";
             this.cuiPanel7.OutlineThickness = 1F;
-            this.cuiPanel7.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel7.PanelColor = System.Drawing.Color.White;
             this.cuiPanel7.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel7.Rounding = new System.Windows.Forms.Padding(8);
             this.cuiPanel7.Size = new System.Drawing.Size(620, 76);
@@ -419,14 +424,39 @@
             // 
             // cuiPanel8
             // 
-            this.cuiPanel8.Location = new System.Drawing.Point(42, 120);
+            this.cuiPanel8.Controls.Add(this.cuiPanel10);
+            this.cuiPanel8.Location = new System.Drawing.Point(42, 109);
             this.cuiPanel8.Name = "cuiPanel8";
             this.cuiPanel8.OutlineThickness = 1F;
-            this.cuiPanel8.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel8.PanelColor = System.Drawing.Color.White;
             this.cuiPanel8.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel8.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPanel8.Size = new System.Drawing.Size(620, 76);
+            this.cuiPanel8.Size = new System.Drawing.Size(620, 87);
             this.cuiPanel8.TabIndex = 1;
+            // 
+            // cuiPanel9
+            // 
+            this.cuiPanel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cuiPanel9.Location = new System.Drawing.Point(0, 0);
+            this.cuiPanel9.Name = "cuiPanel9";
+            this.cuiPanel9.OutlineThickness = 1F;
+            this.cuiPanel9.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel9.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel9.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel9.Size = new System.Drawing.Size(10, 76);
+            this.cuiPanel9.TabIndex = 1;
+            // 
+            // cuiPanel10
+            // 
+            this.cuiPanel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cuiPanel10.Location = new System.Drawing.Point(0, 0);
+            this.cuiPanel10.Name = "cuiPanel10";
+            this.cuiPanel10.OutlineThickness = 1F;
+            this.cuiPanel10.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel10.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel10.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel10.Size = new System.Drawing.Size(10, 87);
+            this.cuiPanel10.TabIndex = 1;
             // 
             // Doctor3
             // 
@@ -454,6 +484,8 @@
             this.cuiPanel6.ResumeLayout(false);
             this.cuiPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.cuiPanel7.ResumeLayout(false);
+            this.cuiPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -485,5 +517,7 @@
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel5;
         private CuoreUI.Controls.cuiPanel cuiPanel8;
         private CuoreUI.Controls.cuiPanel cuiPanel7;
+        private CuoreUI.Controls.cuiPanel cuiPanel10;
+        private CuoreUI.Controls.cuiPanel cuiPanel9;
     }
 }
