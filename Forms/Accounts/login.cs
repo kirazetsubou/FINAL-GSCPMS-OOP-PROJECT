@@ -20,7 +20,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-        string connectionString = "Server=192.168.100.226,1433;Database=Employee;Trusted_Connection=True;";
+        string connectionString = "Server=192.168.226,1433;Database=EmployeeTrusted_Connection=True;";
 
 
         [DllImportAttribute("user32.dll")]
@@ -98,17 +98,12 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             Password.UseSystemPasswordChar = !hopeCheckBox1.Checked;
         }
 
-        private void panel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM Employees WHERE Username = @username AND Password = @password";
+                string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@username", Username.Text);
                 cmd.Parameters.AddWithValue("@password", Password.Text);
@@ -125,10 +120,6 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 }
             }
         }
-
-        private void hopeTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
