@@ -19,7 +19,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-        string connectionString = "Server=YOUR_SERVER_NAME;Database=SimpleLoginDB;Trusted_Connection=True;";
+        string connectionString = "Server=192.168.226,1433;Database=EmployeeTrusted_Connection=True;";
 
 
         [DllImportAttribute("user32.dll")]
