@@ -33,15 +33,12 @@
             this.btnBack = new ReaLTaiizor.Controls.HopeButton();
             this.btnNext = new ReaLTaiizor.Controls.HopeButton();
             this.btnRegister = new ReaLTaiizor.Controls.HopeButton();
-            this.trackerProgress = new CuoreUI.Controls.cuiProgressTrackerVertical();
             this.smallLabel3 = new ReaLTaiizor.Controls.SmallLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.displaypanel = new GSPMS.RPanel();
-            this.rPanel1 = new GSPMS.RPanel();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
             this.cuiColorPicker1 = new CuoreUI.Components.cuiColorPicker(this.components);
-            this.rPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.trackerProgress = new CuoreUI.Controls.cuiProgressTrackerHorizontal();
+            this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
             this.SuspendLayout();
             // 
             // btnBack
@@ -54,10 +51,11 @@
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnBack.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.btnBack.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnBack.Location = new System.Drawing.Point(237, 398);
+            this.btnBack.Location = new System.Drawing.Point(515, 788);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.btnBack.Size = new System.Drawing.Size(120, 40);
+            this.btnBack.Size = new System.Drawing.Size(160, 49);
             this.btnBack.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnBack.TabIndex = 12;
             this.btnBack.Text = "Back";
@@ -75,10 +73,11 @@
             this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnNext.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.btnNext.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnNext.Location = new System.Drawing.Point(719, 398);
+            this.btnNext.Location = new System.Drawing.Point(1053, 788);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
             this.btnNext.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.btnNext.Size = new System.Drawing.Size(120, 40);
+            this.btnNext.Size = new System.Drawing.Size(160, 49);
             this.btnNext.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnNext.TabIndex = 13;
             this.btnNext.Text = "Next";
@@ -96,10 +95,11 @@
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnRegister.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.btnRegister.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnRegister.Location = new System.Drawing.Point(719, 398);
+            this.btnRegister.Location = new System.Drawing.Point(1053, 788);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.btnRegister.Size = new System.Drawing.Size(120, 40);
+            this.btnRegister.Size = new System.Drawing.Size(160, 49);
             this.btnRegister.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnRegister.TabIndex = 14;
             this.btnRegister.Text = "Register";
@@ -107,38 +107,16 @@
             this.btnRegister.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // trackerProgress
-            // 
-            this.trackerProgress.AutoRounding = true;
-            this.trackerProgress.BackColor = System.Drawing.Color.White;
-            this.trackerProgress.CompletedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.trackerProgress.CurrentTaskForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.trackerProgress.ForeColor = System.Drawing.Color.Black;
-            this.trackerProgress.LineThickness = 4;
-            this.trackerProgress.Location = new System.Drawing.Point(58, 185);
-            this.trackerProgress.Name = "trackerProgress";
-            this.trackerProgress.Rounding = 10;
-            this.trackerProgress.ShowSymbols = true;
-            this.trackerProgress.Size = new System.Drawing.Size(106, 235);
-            this.trackerProgress.TabIndex = 16;
-            this.trackerProgress.TaskForeColor = System.Drawing.Color.Black;
-            this.trackerProgress.Tasks = new string[] {
-        "Create Account",
-        "Address Details",
-        "Account Setup"};
-            this.trackerProgress.TasksProgress = 0;
-            this.trackerProgress.Text = "cuiProgressTrackerVertical1";
-            this.trackerProgress.TrackColor = System.Drawing.Color.LightGray;
-            // 
             // smallLabel3
             // 
             this.smallLabel3.AutoSize = true;
             this.smallLabel3.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel3.ForeColor = System.Drawing.Color.Black;
-            this.smallLabel3.Location = new System.Drawing.Point(18, 169);
+            this.smallLabel3.Location = new System.Drawing.Point(81, 743);
+            this.smallLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.smallLabel3.Name = "smallLabel3";
-            this.smallLabel3.Size = new System.Drawing.Size(142, 15);
+            this.smallLabel3.Size = new System.Drawing.Size(178, 20);
             this.smallLabel3.TabIndex = 9;
             this.smallLabel3.Text = "Already have an account?";
             // 
@@ -146,9 +124,10 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(158, 171);
+            this.linkLabel2.Location = new System.Drawing.Point(267, 745);
+            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(45, 15);
+            this.linkLabel2.Size = new System.Drawing.Size(52, 18);
             this.linkLabel2.TabIndex = 10;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Sign In";
@@ -159,71 +138,76 @@
             this.displaypanel.BackColor = System.Drawing.Color.LightGray;
             this.displaypanel.BorderColor = System.Drawing.Color.White;
             this.displaypanel.Edge = 20;
-            this.displaypanel.Location = new System.Drawing.Point(237, 12);
+            this.displaypanel.Location = new System.Drawing.Point(461, 102);
+            this.displaypanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.displaypanel.Name = "displaypanel";
-            this.displaypanel.Size = new System.Drawing.Size(602, 372);
+            this.displaypanel.Size = new System.Drawing.Size(773, 650);
             this.displaypanel.TabIndex = 11;
             this.displaypanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.displaypanel_MouseDown);
             this.displaypanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.displaypanel_MouseMove);
-            // 
-            // rPanel1
-            // 
-            this.rPanel1.BackColor = System.Drawing.Color.White;
-            this.rPanel1.BorderColor = System.Drawing.Color.White;
-            this.rPanel1.Controls.Add(this.hopePictureBox1);
-            this.rPanel1.Edge = 20;
-            this.rPanel1.Location = new System.Drawing.Point(9, 6);
-            this.rPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.rPanel1.Name = "rPanel1";
-            this.rPanel1.Size = new System.Drawing.Size(223, 149);
-            this.rPanel1.TabIndex = 17;
-            this.rPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.rPanel1_Paint);
-            this.rPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.rPanel1_MouseMove);
-            // 
-            // hopePictureBox1
-            // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(3, 6);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(217, 133);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.hopePictureBox1.TabIndex = 2;
-            this.hopePictureBox1.TabStop = false;
-            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.hopePictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.hopePictureBox1_MouseMove);
             // 
             // cuiColorPicker1
             // 
             this.cuiColorPicker1.Color = System.Drawing.Color.Empty;
             this.cuiColorPicker1.EnableThemeChangeButton = true;
-            this.cuiColorPicker1.Theme = CuoreUI.Components.Forms.ColorPickerForm.Themes.Light;
+            this.cuiColorPicker1.Theme = CuoreUI.Components.Forms.ColorPickerForm.Themes.Dark;
+            // 
+            // trackerProgress
+            // 
+            this.trackerProgress.AutoRounding = true;
+            this.trackerProgress.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._473571710_1028756222602780_3200496696713397802_n_removebg_preview;
+            this.trackerProgress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.trackerProgress.CompletedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.trackerProgress.CurrentTaskForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.trackerProgress.LineThickness = 4;
+            this.trackerProgress.Location = new System.Drawing.Point(475, 40);
+            this.trackerProgress.Name = "trackerProgress";
+            this.trackerProgress.Rounding = 15;
+            this.trackerProgress.ShowSymbols = true;
+            this.trackerProgress.Size = new System.Drawing.Size(738, 55);
+            this.trackerProgress.TabIndex = 0;
+            this.trackerProgress.TaskForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.trackerProgress.Tasks = new string[] {
+        "Create Account",
+        "Address Details",
+        "Account Setup"};
+            this.trackerProgress.TasksProgress = 2;
+            this.trackerProgress.Text = "cuiProgressTrackerHorizontal1";
+            this.trackerProgress.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            // 
+            // cuiPanel1
+            // 
+            this.cuiPanel1.Location = new System.Drawing.Point(26, 40);
+            this.cuiPanel1.Name = "cuiPanel1";
+            this.cuiPanel1.OutlineThickness = 1F;
+            this.cuiPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(25);
+            this.cuiPanel1.Size = new System.Drawing.Size(402, 650);
+            this.cuiPanel1.TabIndex = 15;
             // 
             // register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(867, 450);
+            this.ClientSize = new System.Drawing.Size(1247, 880);
+            this.Controls.Add(this.smallLabel3);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.trackerProgress);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.displaypanel);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.smallLabel3);
-            this.Controls.Add(this.rPanel1);
+            this.Controls.Add(this.cuiPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "register";
             this.Load += new System.EventHandler(this.register_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.register_MouseDown);
-            this.rPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,12 +217,11 @@
         private ReaLTaiizor.Controls.HopeButton btnBack;
         private ReaLTaiizor.Controls.HopeButton btnNext;
         private ReaLTaiizor.Controls.HopeButton btnRegister;
-        private CuoreUI.Controls.cuiProgressTrackerVertical trackerProgress;
         private GSPMS.RPanel displaypanel;
         private ReaLTaiizor.Controls.SmallLabel smallLabel3;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
-        private GSPMS.RPanel rPanel1;
         private CuoreUI.Components.cuiColorPicker cuiColorPicker1;
+        private CuoreUI.Controls.cuiProgressTrackerHorizontal trackerProgress;
+        private CuoreUI.Controls.cuiPanel cuiPanel1;
     }
 }
