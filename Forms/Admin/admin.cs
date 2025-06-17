@@ -21,23 +21,23 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Admin
 
         private void admin_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new admindashboard());
+           
         }
         
-        private void OpenChildForm(UserControl childForm)
+       
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Hide();
-            }
-            currentChildForm = childForm;
-            childForm.Dock = DockStyle.Fill;
-            displaypanel.Controls.Clear();
-            displaypanel.Controls.Add(childForm);
-            displaypanel.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+
         }
 
+        private void hopePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

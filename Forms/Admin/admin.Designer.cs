@@ -28,191 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new ReaLTaiizor.Controls.Panel();
-            this.panel2 = new ReaLTaiizor.Controls.Panel();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.displaypanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(234, 228);
+            this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.iconButton5);
-            this.panel1.Controls.Add(this.iconButton4);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.EdgeColor = System.Drawing.Color.LightGray;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(2, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(187, 626);
-            this.panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel1.TabIndex = 0;
-            this.panel1.Text = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1627, 76);
+            this.panel1.TabIndex = 8;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.hopePictureBox1);
-            this.panel2.EdgeColor = System.Drawing.Color.LightGray;
-            this.panel2.Location = new System.Drawing.Point(22, 29);
+            this.panel2.Location = new System.Drawing.Point(1462, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(5);
-            this.panel2.Size = new System.Drawing.Size(157, 82);
-            this.panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel2.TabIndex = 4;
-            this.panel2.Text = "panel2";
+            this.panel2.Size = new System.Drawing.Size(52, 45);
+            this.panel2.TabIndex = 3;
             // 
-            // hopePictureBox1
+            // label3
             // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.White;
-            this.hopePictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(5, 5);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(147, 72);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.hopePictureBox1.TabIndex = 3;
-            this.hopePictureBox1.TabStop = false;
-            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1378, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "label3";
             // 
-            // iconButton5
+            // label2
             // 
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(8, 534);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(165, 70);
-            this.iconButton5.TabIndex = 4;
-            this.iconButton5.Text = "Settings";
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1289, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label2";
             // 
-            // iconButton4
+            // label1
             // 
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(8, 358);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(165, 70);
-            this.iconButton4.TabIndex = 3;
-            this.iconButton4.Text = "System Logs";
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1196, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
-            // iconButton3
+            // panel10
             // 
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(11, 282);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(165, 70);
-            this.iconButton3.TabIndex = 2;
-            this.iconButton3.Text = "Manage Services";
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.panel10.Location = new System.Drawing.Point(125, 615);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(172, 152);
+            this.panel10.TabIndex = 16;
             // 
-            // iconButton2
+            // panel9
             // 
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(14, 204);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(165, 70);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Text = "Manage Accounts";
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.panel9.Location = new System.Drawing.Point(1359, 418);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(172, 152);
+            this.panel9.TabIndex = 15;
             // 
-            // iconButton1
+            // panel8
             // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(14, 128);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(165, 70);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Dashboard";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.panel8.Location = new System.Drawing.Point(1105, 418);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(172, 152);
+            this.panel8.TabIndex = 14;
             // 
-            // displaypanel
+            // panel7
             // 
-            this.displaypanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.displaypanel.Location = new System.Drawing.Point(187, 0);
-            this.displaypanel.Name = "displaypanel";
-            this.displaypanel.Size = new System.Drawing.Size(1036, 626);
-            this.displaypanel.TabIndex = 1;
+            this.panel7.Location = new System.Drawing.Point(851, 418);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(172, 152);
+            this.panel7.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(606, 418);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(172, 152);
+            this.panel6.TabIndex = 12;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(361, 418);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(172, 152);
+            this.panel5.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(125, 418);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(172, 152);
+            this.panel4.TabIndex = 10;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(81, 86);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1483, 286);
+            this.flowLayoutPanel1.TabIndex = 9;
             // 
             // admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1223, 626);
-            this.Controls.Add(this.displaypanel);
+            this.ClientSize = new System.Drawing.Size(1631, 770);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.admin_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
+            this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.Panel panel1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private ReaLTaiizor.Controls.Panel panel2;
-        private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
-        private System.Windows.Forms.Panel displaypanel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
