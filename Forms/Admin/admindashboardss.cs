@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 {
-    public partial class admindashboard : UserControl
+    public partial class admindashboardss : UserControl
     {
-        public admindashboard()
+        public admindashboardss()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 {
-    partial class admindashboard
+    partial class admindashboardss
     {
         /// <summary> 
         /// Required designer variable.
