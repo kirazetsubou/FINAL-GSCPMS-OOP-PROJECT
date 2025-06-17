@@ -42,8 +42,8 @@
             this.hopeCheckBox1 = new ReaLTaiizor.Controls.HopeCheckBox();
             this.smallLabel2 = new ReaLTaiizor.Controls.SmallLabel();
             this.smallLabel1 = new ReaLTaiizor.Controls.SmallLabel();
-            this.hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
+            this.Password = new ReaLTaiizor.Controls.HopeTextBox();
+            this.Username = new ReaLTaiizor.Controls.HopeTextBox();
             this.btnLogin = new ReaLTaiizor.Controls.HopeButton();
             this.panel1.SuspendLayout();
             this.rPanel2.SuspendLayout();
@@ -59,10 +59,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.EdgeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panel1.Size = new System.Drawing.Size(1067, 554);
+            this.panel1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.panel1.TabIndex = 0;
             this.panel1.Text = "panel1";
@@ -74,10 +73,10 @@
             this.rPanel2.BorderColor = System.Drawing.Color.White;
             this.rPanel2.Controls.Add(this.hopePictureBox1);
             this.rPanel2.Edge = 20;
-            this.rPanel2.Location = new System.Drawing.Point(36, 84);
-            this.rPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rPanel2.Location = new System.Drawing.Point(27, 68);
+            this.rPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rPanel2.Name = "rPanel2";
-            this.rPanel2.Size = new System.Drawing.Size(456, 369);
+            this.rPanel2.Size = new System.Drawing.Size(342, 300);
             this.rPanel2.TabIndex = 2;
             this.rPanel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.rPanel2_MouseMove);
             // 
@@ -85,11 +84,10 @@
             // 
             this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(16, 22);
-            this.hopePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hopePictureBox1.Location = new System.Drawing.Point(12, 18);
             this.hopePictureBox1.Name = "hopePictureBox1";
             this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(425, 327);
+            this.hopePictureBox1.Size = new System.Drawing.Size(319, 266);
             this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.hopePictureBox1.TabIndex = 1;
@@ -111,14 +109,13 @@
             this.rPanel1.Controls.Add(this.hopeCheckBox1);
             this.rPanel1.Controls.Add(this.smallLabel2);
             this.rPanel1.Controls.Add(this.smallLabel1);
-            this.rPanel1.Controls.Add(this.hopeTextBox2);
-            this.rPanel1.Controls.Add(this.hopeTextBox1);
+            this.rPanel1.Controls.Add(this.Password);
+            this.rPanel1.Controls.Add(this.Username);
             this.rPanel1.Controls.Add(this.btnLogin);
             this.rPanel1.Edge = 20;
-            this.rPanel1.Location = new System.Drawing.Point(568, 15);
-            this.rPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rPanel1.Location = new System.Drawing.Point(426, 12);
             this.rPanel1.Name = "rPanel1";
-            this.rPanel1.Size = new System.Drawing.Size(483, 507);
+            this.rPanel1.Size = new System.Drawing.Size(362, 412);
             this.rPanel1.TabIndex = 0;
             this.rPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.rPanel1_MouseMove);
             // 
@@ -130,10 +127,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(429, 17);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Location = new System.Drawing.Point(322, 14);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(39, 34);
+            this.iconButton1.Size = new System.Drawing.Size(29, 28);
             this.iconButton1.TabIndex = 11;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -145,10 +141,9 @@
             this.smallLabel5.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel5.Location = new System.Drawing.Point(141, 69);
-            this.smallLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel5.Location = new System.Drawing.Point(106, 56);
             this.smallLabel5.Name = "smallLabel5";
-            this.smallLabel5.Size = new System.Drawing.Size(232, 20);
+            this.smallLabel5.Size = new System.Drawing.Size(188, 15);
             this.smallLabel5.TabIndex = 10;
             this.smallLabel5.Text = "Login to your account to continue";
             // 
@@ -158,10 +153,9 @@
             this.smallLabel4.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel4.Location = new System.Drawing.Point(156, 15);
-            this.smallLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel4.Location = new System.Drawing.Point(117, 12);
             this.smallLabel4.Name = "smallLabel4";
-            this.smallLabel4.Size = new System.Drawing.Size(197, 54);
+            this.smallLabel4.Size = new System.Drawing.Size(158, 45);
             this.smallLabel4.TabIndex = 9;
             this.smallLabel4.Text = "Welcome";
             // 
@@ -169,10 +163,9 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.Location = new System.Drawing.Point(301, 446);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel2.Location = new System.Drawing.Point(226, 362);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(45, 13);
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Sign Up";
@@ -184,10 +177,9 @@
             this.smallLabel3.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel3.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel3.Location = new System.Drawing.Point(141, 446);
-            this.smallLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel3.Location = new System.Drawing.Point(106, 362);
             this.smallLabel3.Name = "smallLabel3";
-            this.smallLabel3.Size = new System.Drawing.Size(150, 19);
+            this.smallLabel3.Size = new System.Drawing.Size(125, 13);
             this.smallLabel3.TabIndex = 7;
             this.smallLabel3.Text = "Dont have an account?";
             // 
@@ -195,10 +187,9 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.Location = new System.Drawing.Point(301, 288);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(226, 234);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(115, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(91, 13);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot password?";
@@ -217,10 +208,9 @@
             this.hopeCheckBox1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
             this.hopeCheckBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hopeCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeCheckBox1.Location = new System.Drawing.Point(65, 284);
-            this.hopeCheckBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hopeCheckBox1.Location = new System.Drawing.Point(49, 231);
             this.hopeCheckBox1.Name = "hopeCheckBox1";
-            this.hopeCheckBox1.Size = new System.Drawing.Size(129, 20);
+            this.hopeCheckBox1.Size = new System.Drawing.Size(113, 20);
             this.hopeCheckBox1.TabIndex = 5;
             this.hopeCheckBox1.Text = "Show Password";
             this.hopeCheckBox1.UseVisualStyleBackColor = true;
@@ -232,10 +222,9 @@
             this.smallLabel2.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel2.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel2.Location = new System.Drawing.Point(80, 210);
-            this.smallLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel2.Location = new System.Drawing.Point(60, 171);
             this.smallLabel2.Name = "smallLabel2";
-            this.smallLabel2.Size = new System.Drawing.Size(67, 19);
+            this.smallLabel2.Size = new System.Drawing.Size(56, 13);
             this.smallLabel2.TabIndex = 4;
             this.smallLabel2.Text = "Password";
             // 
@@ -245,60 +234,57 @@
             this.smallLabel1.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.smallLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel1.Location = new System.Drawing.Point(80, 105);
-            this.smallLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel1.Location = new System.Drawing.Point(60, 85);
             this.smallLabel1.Name = "smallLabel1";
-            this.smallLabel1.Size = new System.Drawing.Size(41, 19);
+            this.smallLabel1.Size = new System.Drawing.Size(34, 13);
             this.smallLabel1.TabIndex = 3;
             this.smallLabel1.Text = "Email";
             // 
-            // hopeTextBox2
+            // Password
             // 
-            this.hopeTextBox2.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox2.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox2.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox2.Hint = "";
-            this.hopeTextBox2.Location = new System.Drawing.Point(63, 230);
-            this.hopeTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hopeTextBox2.MaxLength = 32767;
-            this.hopeTextBox2.Multiline = false;
-            this.hopeTextBox2.Name = "hopeTextBox2";
-            this.hopeTextBox2.PasswordChar = '\0';
-            this.hopeTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox2.SelectedText = "";
-            this.hopeTextBox2.SelectionLength = 0;
-            this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(357, 43);
-            this.hopeTextBox2.TabIndex = 2;
-            this.hopeTextBox2.TabStop = false;
-            this.hopeTextBox2.UseSystemPasswordChar = true;
+            this.Password.BackColor = System.Drawing.Color.White;
+            this.Password.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.Password.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Password.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Password.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Password.Hint = "";
+            this.Password.Location = new System.Drawing.Point(47, 187);
+            this.Password.MaxLength = 32767;
+            this.Password.Multiline = false;
+            this.Password.Name = "Password";
+            this.Password.PasswordChar = '\0';
+            this.Password.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Password.SelectedText = "";
+            this.Password.SelectionLength = 0;
+            this.Password.SelectionStart = 0;
+            this.Password.Size = new System.Drawing.Size(268, 38);
+            this.Password.TabIndex = 2;
+            this.Password.TabStop = false;
+            this.Password.UseSystemPasswordChar = true;
             // 
-            // hopeTextBox1
+            // Username
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(63, 128);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(360, 43);
-            this.hopeTextBox1.TabIndex = 1;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            this.Username.BackColor = System.Drawing.Color.White;
+            this.Username.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.Username.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Username.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.Username.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Username.Hint = "";
+            this.Username.Location = new System.Drawing.Point(47, 104);
+            this.Username.MaxLength = 32767;
+            this.Username.Multiline = false;
+            this.Username.Name = "Username";
+            this.Username.PasswordChar = '\0';
+            this.Username.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Username.SelectedText = "";
+            this.Username.SelectionLength = 0;
+            this.Username.SelectionStart = 0;
+            this.Username.Size = new System.Drawing.Size(270, 38);
+            this.Username.TabIndex = 1;
+            this.Username.TabStop = false;
+            this.Username.UseSystemPasswordChar = false;
             // 
             // btnLogin
             // 
@@ -310,28 +296,27 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnLogin.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.btnLogin.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnLogin.Location = new System.Drawing.Point(169, 369);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(127, 300);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.btnLogin.Size = new System.Drawing.Size(160, 49);
+            this.btnLogin.Size = new System.Drawing.Size(120, 40);
             this.btnLogin.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextColor = System.Drawing.Color.White;
             this.btnLogin.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximumSize = new System.Drawing.Size(2560, 1280);
-            this.MinimumSize = new System.Drawing.Size(253, 49);
+            this.MaximumSize = new System.Drawing.Size(1920, 1040);
+            this.MinimumSize = new System.Drawing.Size(190, 40);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -351,8 +336,8 @@
         private GSPMS.RPanel rPanel1;
         private ReaLTaiizor.Controls.SmallLabel smallLabel2;
         private ReaLTaiizor.Controls.SmallLabel smallLabel1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
+        private ReaLTaiizor.Controls.HopeTextBox Password;
+        private ReaLTaiizor.Controls.HopeTextBox Username;
         private ReaLTaiizor.Controls.HopeButton btnLogin;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private ReaLTaiizor.Controls.SmallLabel smallLabel5;

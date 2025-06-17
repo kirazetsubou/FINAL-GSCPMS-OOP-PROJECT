@@ -94,7 +94,31 @@ namespace FINAL_GSCPMS_OOP_PROJECT
 
         private void hopeCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            hopeTextBox2.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+            Password.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@username", Username.Text);
+                cmd.Parameters.AddWithValue("@password", Password.Text);
+
+                int result = (int)cmd.ExecuteScalar();
+                if (result > 0)
+                {
+                    MessageBox.Show("Login successful!");
+                    // Proceed to next form or dashboard
+                }
+                else
+                {
+                    MessageBox.Show("Invalid credentials.");
+                }
+            }
         }
     }
 }
+
