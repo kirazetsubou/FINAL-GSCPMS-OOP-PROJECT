@@ -51,7 +51,10 @@
             this.dungeonLabel6 = new ReaLTaiizor.Controls.DungeonLabel();
             this.dungeonLabel7 = new ReaLTaiizor.Controls.DungeonLabel();
             this.dungeonLabel8 = new ReaLTaiizor.Controls.DungeonLabel();
+            this.cuiPanel7 = new CuoreUI.Controls.cuiPanel();
+            this.cuiPanel8 = new CuoreUI.Controls.cuiPanel();
             this.cuiPanel1.SuspendLayout();
+            this.cuiPanel2.SuspendLayout();
             this.cuiPanel3.SuspendLayout();
             this.cuiPanel4.SuspendLayout();
             this.cuiPanel5.SuspendLayout();
@@ -156,6 +159,8 @@
             // 
             // cuiPanel2
             // 
+            this.cuiPanel2.Controls.Add(this.cuiPanel8);
+            this.cuiPanel2.Controls.Add(this.cuiPanel7);
             this.cuiPanel2.Location = new System.Drawing.Point(33, 528);
             this.cuiPanel2.Name = "cuiPanel2";
             this.cuiPanel2.OutlineThickness = 1F;
@@ -401,6 +406,28 @@
             this.dungeonLabel8.TabIndex = 8;
             this.dungeonLabel8.Text = "Past Illness or Injuries";
             // 
+            // cuiPanel7
+            // 
+            this.cuiPanel7.Location = new System.Drawing.Point(42, 27);
+            this.cuiPanel7.Name = "cuiPanel7";
+            this.cuiPanel7.OutlineThickness = 1F;
+            this.cuiPanel7.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel7.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel7.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel7.Size = new System.Drawing.Size(620, 76);
+            this.cuiPanel7.TabIndex = 0;
+            // 
+            // cuiPanel8
+            // 
+            this.cuiPanel8.Location = new System.Drawing.Point(42, 120);
+            this.cuiPanel8.Name = "cuiPanel8";
+            this.cuiPanel8.OutlineThickness = 1F;
+            this.cuiPanel8.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel8.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel8.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel8.Size = new System.Drawing.Size(620, 76);
+            this.cuiPanel8.TabIndex = 1;
+            // 
             // Doctor3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -417,6 +444,7 @@
             this.Size = new System.Drawing.Size(1114, 768);
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
+            this.cuiPanel2.ResumeLayout(false);
             this.cuiPanel3.ResumeLayout(false);
             this.cuiPanel3.PerformLayout();
             this.cuiPanel4.ResumeLayout(false);
@@ -455,5 +483,7 @@
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel7;
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel6;
         private ReaLTaiizor.Controls.DungeonLabel dungeonLabel5;
+        private CuoreUI.Controls.cuiPanel cuiPanel8;
+        private CuoreUI.Controls.cuiPanel cuiPanel7;
     }
 }
