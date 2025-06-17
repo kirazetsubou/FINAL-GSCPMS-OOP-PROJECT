@@ -157,5 +157,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+ 
+        }
     }
 }
