@@ -1,13 +1,13 @@
 ﻿namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
 {
-    partial class Doctor
+    partial class Doctordashboard
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -39,13 +39,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rPanel1 = new GSPMS.RPanel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rPanel2 = new GSPMS.RPanel();
-            this.rPanel3 = new GSPMS.RPanel();
-            this.rPanel4 = new GSPMS.RPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.rPanel4 = new GSPMS.RPanel();
+            this.rPanel3 = new GSPMS.RPanel();
+            this.rPanel2 = new GSPMS.RPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
             this.rPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,12 +54,11 @@
             this.displaypanel.BackColor = System.Drawing.Color.LightGray;
             this.displaypanel.BorderColor = System.Drawing.Color.White;
             this.displaypanel.Edge = 20;
-            this.displaypanel.Location = new System.Drawing.Point(384, 232);
+            this.displaypanel.Location = new System.Drawing.Point(1051, 188);
             this.displaypanel.Margin = new System.Windows.Forms.Padding(4);
             this.displaypanel.Name = "displaypanel";
             this.displaypanel.Size = new System.Drawing.Size(200, 124);
-            this.displaypanel.TabIndex = 23;
-            this.displaypanel.Paint += new System.Windows.Forms.PaintEventHandler(this.displaypanel_Paint);
+            this.displaypanel.TabIndex = 31;
             // 
             // iconButton4
             // 
@@ -172,6 +169,47 @@
             this.iconButton1.Text = "iconButton1";
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(392, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(218, 56);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Welcome, Dr.";
+            // 
+            // rPanel4
+            // 
+            this.rPanel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.rPanel4.BorderColor = System.Drawing.Color.White;
+            this.rPanel4.Edge = 20;
+            this.rPanel4.Location = new System.Drawing.Point(420, 525);
+            this.rPanel4.Name = "rPanel4";
+            this.rPanel4.Size = new System.Drawing.Size(859, 253);
+            this.rPanel4.TabIndex = 34;
+            // 
+            // rPanel3
+            // 
+            this.rPanel3.BackColor = System.Drawing.Color.LightGray;
+            this.rPanel3.BorderColor = System.Drawing.Color.White;
+            this.rPanel3.Edge = 20;
+            this.rPanel3.Location = new System.Drawing.Point(433, 189);
+            this.rPanel3.Name = "rPanel3";
+            this.rPanel3.Size = new System.Drawing.Size(448, 266);
+            this.rPanel3.TabIndex = 33;
+            // 
+            // rPanel2
+            // 
+            this.rPanel2.BackColor = System.Drawing.Color.LightGray;
+            this.rPanel2.BorderColor = System.Drawing.Color.White;
+            this.rPanel2.Edge = 20;
+            this.rPanel2.Location = new System.Drawing.Point(1051, 331);
+            this.rPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.rPanel2.Name = "rPanel2";
+            this.rPanel2.Size = new System.Drawing.Size(200, 124);
+            this.rPanel2.TabIndex = 32;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
@@ -188,83 +226,20 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 838);
-            this.panel1.TabIndex = 22;
+            this.panel1.TabIndex = 30;
             // 
-            // rPanel2
-            // 
-            this.rPanel2.BackColor = System.Drawing.Color.LightGray;
-            this.rPanel2.BorderColor = System.Drawing.Color.White;
-            this.rPanel2.Edge = 20;
-            this.rPanel2.Location = new System.Drawing.Point(605, 232);
-            this.rPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.rPanel2.Name = "rPanel2";
-            this.rPanel2.Size = new System.Drawing.Size(200, 124);
-            this.rPanel2.TabIndex = 24;
-            // 
-            // rPanel3
-            // 
-            this.rPanel3.BackColor = System.Drawing.Color.LightGray;
-            this.rPanel3.BorderColor = System.Drawing.Color.White;
-            this.rPanel3.Edge = 20;
-            this.rPanel3.Location = new System.Drawing.Point(868, 232);
-            this.rPanel3.Name = "rPanel3";
-            this.rPanel3.Size = new System.Drawing.Size(387, 236);
-            this.rPanel3.TabIndex = 25;
-            // 
-            // rPanel4
-            // 
-            this.rPanel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.rPanel4.BorderColor = System.Drawing.Color.White;
-            this.rPanel4.Edge = 20;
-            this.rPanel4.Location = new System.Drawing.Point(396, 525);
-            this.rPanel4.Name = "rPanel4";
-            this.rPanel4.Size = new System.Drawing.Size(859, 253);
-            this.rPanel4.TabIndex = 26;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(381, 79);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 16);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Welcome, Dr.";
-            // 
-            // Doctor
+            // Doctordashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 838);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.displaypanel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rPanel4);
             this.Controls.Add(this.rPanel3);
             this.Controls.Add(this.rPanel2);
-            this.Controls.Add(this.displaypanel);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Doctor";
-            this.Text = "Doctor";
-            this.Load += new System.EventHandler(this.Doctor_Load);
+            this.Name = "Doctordashboard";
+            this.Size = new System.Drawing.Size(1302, 838);
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.rPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -275,6 +250,7 @@
         }
 
         #endregion
+
         private GSPMS.RPanel displaypanel;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
@@ -286,12 +262,10 @@
         private System.Windows.Forms.Label label1;
         private GSPMS.RPanel rPanel1;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Panel panel1;
-        private GSPMS.RPanel rPanel2;
-        private GSPMS.RPanel rPanel3;
-        private GSPMS.RPanel rPanel4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private GSPMS.RPanel rPanel4;
+        private GSPMS.RPanel rPanel3;
+        private GSPMS.RPanel rPanel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

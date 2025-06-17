@@ -197,11 +197,17 @@
     <Compile Include="Forms\Admin\admindashboard.Designer.cs">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Doctor\Doctor.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Forms\Doctor\Doc1.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Doctor\Doctor.Designer.cs">
-      <DependentUpon>Doctor.cs</DependentUpon>
+    <Compile Include="Forms\Doctor\Doc1.Designer.cs">
+      <DependentUpon>Doc1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctor\Doctordashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctor\Doctordashboard.Designer.cs">
+      <DependentUpon>Doctordashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Patients\Patients.cs">
       <SubType>Form</SubType>
@@ -265,8 +271,11 @@
     <EmbeddedResource Include="Forms\Admin\admindashboard.resx">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Doctor\Doctor.resx">
-      <DependentUpon>Doctor.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Doctor\Doc1.resx">
+      <DependentUpon>Doc1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctor\Doctordashboard.resx">
+      <DependentUpon>Doctordashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Patients\Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>
