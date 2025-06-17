@@ -261,7 +261,7 @@
             this.Password.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Password.Hint = "";
-            this.Password.Location = new System.Drawing.Point(47, 187);
+            this.Password.Location = new System.Drawing.Point(84, 232);
             this.Password.MaxLength = 32767;
             this.Password.Multiline = false;
             this.Password.Name = "Password";
@@ -284,7 +284,7 @@
             this.Username.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.Username.Hint = "";
-            this.Username.Location = new System.Drawing.Point(47, 104);
+            this.Username.Location = new System.Drawing.Point(86, 127);
             this.Username.MaxLength = 32767;
             this.Username.Multiline = false;
             this.Username.Name = "Username";
