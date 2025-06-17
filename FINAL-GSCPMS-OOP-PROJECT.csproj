@@ -101,52 +101,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\admindashboard.cs">
+    <Compile Include="Forms\Admin\adminmanageDR.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Accounts\admindashboard.Designer.cs">
-      <DependentUpon>admindashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminmanageDR.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminmanageDR.Designer.cs">
+    <Compile Include="Forms\Admin\adminmanageDR.Designer.cs">
       <DependentUpon>adminmanageDR.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\adminmanageUser.cs">
+    <Compile Include="Forms\Admin\adminmanageUser1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Accounts\adminmanageUser.Designer.cs">
-      <DependentUpon>adminmanageUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminmanageUser1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminmanageUser1.Designer.cs">
+    <Compile Include="Forms\Admin\adminmanageUser1.Designer.cs">
       <DependentUpon>adminmanageUser1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\adminservice.cs">
+    <Compile Include="Forms\Admin\adminservice1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Accounts\adminservice.Designer.cs">
-      <DependentUpon>adminservice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminservice1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Accounts\adminservice1.Designer.cs">
+    <Compile Include="Forms\Admin\adminservice1.Designer.cs">
       <DependentUpon>adminservice1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\adminsystemlogs.cs">
+    <Compile Include="Forms\Admin\adminsystemlogs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Accounts\adminsystemlogs.Designer.cs">
+    <Compile Include="Forms\Admin\adminsystemlogs.Designer.cs">
       <DependentUpon>adminsystemlogs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Accounts\adminuserPatient.cs">
+    <Compile Include="Forms\Admin\adminuserPatient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Accounts\adminuserPatient.Designer.cs">
+    <Compile Include="Forms\Admin\adminuserPatient.Designer.cs">
       <DependentUpon>adminuserPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Accounts\forgotpass.cs">
@@ -235,28 +217,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Accounts\admindashboard.resx">
-      <DependentUpon>admindashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminmanageDR.resx">
+    <EmbeddedResource Include="Forms\Admin\adminmanageDR.resx">
       <DependentUpon>adminmanageDR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminmanageUser.resx">
-      <DependentUpon>adminmanageUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminmanageUser1.resx">
+    <EmbeddedResource Include="Forms\Admin\adminmanageUser1.resx">
       <DependentUpon>adminmanageUser1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminservice.resx">
-      <DependentUpon>adminservice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminservice1.resx">
+    <EmbeddedResource Include="Forms\Admin\adminservice1.resx">
       <DependentUpon>adminservice1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminsystemlogs.resx">
+    <EmbeddedResource Include="Forms\Admin\adminsystemlogs.resx">
       <DependentUpon>adminsystemlogs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Accounts\adminuserPatient.resx">
+    <EmbeddedResource Include="Forms\Admin\adminuserPatient.resx">
       <DependentUpon>adminuserPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts\forgotpass.resx">
