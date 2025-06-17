@@ -103,7 +103,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
+                string query = "SELECT COUNT(*) FROM Employees WHERE Username = @username AND Password = @password";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@username", Username.Text);
                 cmd.Parameters.AddWithValue("@password", Password.Text);
@@ -112,7 +112,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 if (result > 0)
                 {
                     MessageBox.Show("Login successful!");
-                    // Proceed to next form or dashboard
+                    
                 }
                 else
                 {
