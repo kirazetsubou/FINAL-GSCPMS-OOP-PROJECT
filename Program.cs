@@ -1,4 +1,5 @@
 ﻿using FINAL_GSCPMS_OOP_PROJECT.Forms.Admin;
+using FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new admin());
+            Application.Run(new Docdashboard());
         }
     }
 }
