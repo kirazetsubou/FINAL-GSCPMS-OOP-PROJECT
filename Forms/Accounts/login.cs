@@ -18,7 +18,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
     {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-        public string connectionString = "Data Source=192.168.100.226,1433;Initial Catalog=Employee;Integrated Security=True;";
+        public string connectionString = "Data Source=192.168.100.226,1433;Initial Catalog=Employee;Persist Security Info=True;User ID=Stephen;Password=***********;Trust Server Certificate=True;";
 
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);

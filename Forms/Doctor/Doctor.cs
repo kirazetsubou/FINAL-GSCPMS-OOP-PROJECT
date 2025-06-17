@@ -21,5 +21,15 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Doctor
         {
 
         }
+
+        private void Doctor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displaypanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
