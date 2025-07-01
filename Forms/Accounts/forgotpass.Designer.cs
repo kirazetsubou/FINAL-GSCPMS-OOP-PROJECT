@@ -28,150 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.displaypanel = new GSPMS.RPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLogin = new CuoreUI.Controls.cuiButton();
+            this.Email = new CuoreUI.Controls.cuiTextBox();
             this.smallLabel1 = new ReaLTaiizor.Controls.SmallLabel();
-            this.hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             this.FoxBigLabel1 = new ReaLTaiizor.Controls.FoxBigLabel();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.displaypanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.cuiButton1 = new CuoreUI.Controls.cuiButton();
             this.SuspendLayout();
             // 
-            // displaypanel
+            // label1
             // 
-            this.displaypanel.BackColor = System.Drawing.Color.LightGray;
-            this.displaypanel.BorderColor = System.Drawing.Color.White;
-            this.displaypanel.Controls.Add(this.smallLabel1);
-            this.displaypanel.Controls.Add(this.hopeButton1);
-            this.displaypanel.Controls.Add(this.hopeTextBox1);
-            this.displaypanel.Controls.Add(this.FoxBigLabel1);
-            this.displaypanel.Edge = 20;
-            this.displaypanel.Location = new System.Drawing.Point(339, 27);
-            this.displaypanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.displaypanel.Name = "displaypanel";
-            this.displaypanel.Size = new System.Drawing.Size(684, 431);
-            this.displaypanel.TabIndex = 12;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(98, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 18);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Don\'t worry.We\'ll send you a reset instructions\r\n";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.CheckButton = false;
+            this.btnLogin.Checked = false;
+            this.btnLogin.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.btnLogin.CheckedForeColor = System.Drawing.Color.White;
+            this.btnLogin.CheckedImageTint = System.Drawing.Color.White;
+            this.btnLogin.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.btnLogin.Content = "Reset ";
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.HoverBackground = System.Drawing.Color.White;
+            this.btnLogin.HoveredImageTint = System.Drawing.Color.White;
+            this.btnLogin.HoverForeColor = System.Drawing.Color.Black;
+            this.btnLogin.HoverOutline = System.Drawing.Color.Aqua;
+            this.btnLogin.Image = null;
+            this.btnLogin.ImageAutoCenter = true;
+            this.btnLogin.ImageExpand = new System.Drawing.Point(0, 0);
+            this.btnLogin.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnLogin.Location = new System.Drawing.Point(407, 327);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.NormalBackground = System.Drawing.Color.White;
+            this.btnLogin.NormalForeColor = System.Drawing.Color.Black;
+            this.btnLogin.NormalImageTint = System.Drawing.Color.White;
+            this.btnLogin.NormalOutline = System.Drawing.Color.DeepSkyBlue;
+            this.btnLogin.OutlineThickness = 1F;
+            this.btnLogin.PressedBackground = System.Drawing.Color.WhiteSmoke;
+            this.btnLogin.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnLogin.PressedImageTint = System.Drawing.Color.White;
+            this.btnLogin.PressedOutline = System.Drawing.Color.Red;
+            this.btnLogin.Rounding = new System.Windows.Forms.Padding(25);
+            this.btnLogin.Size = new System.Drawing.Size(186, 45);
+            this.btnLogin.TabIndex = 26;
+            this.btnLogin.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.btnLogin.TextOffset = new System.Drawing.Point(0, 0);
+            // 
+            // Email
+            // 
+            this.Email.BackgroundColor = System.Drawing.Color.White;
+            this.Email.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Email.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.Email.Content = "";
+            this.Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Email.FocusBackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.Email.FocusBorderColor = System.Drawing.Color.Red;
+            this.Email.FocusImageTint = System.Drawing.Color.DimGray;
+            this.Email.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.Color.Black;
+            this.Email.Image = null;
+            this.Email.ImageExpand = new System.Drawing.Point(10, 10);
+            this.Email.ImageOffset = new System.Drawing.Point(5, 5);
+            this.Email.Location = new System.Drawing.Point(197, 223);
+            this.Email.Margin = new System.Windows.Forms.Padding(4);
+            this.Email.Multiline = false;
+            this.Email.Name = "Email";
+            this.Email.NormalImageTint = System.Drawing.Color.White;
+            this.Email.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
+            this.Email.PasswordChar = false;
+            this.Email.PlaceholderColor = System.Drawing.Color.Black;
+            this.Email.PlaceholderText = " Email";
+            this.Email.Rounding = new System.Windows.Forms.Padding(25);
+            this.Email.Size = new System.Drawing.Size(336, 45);
+            this.Email.TabIndex = 25;
+            this.Email.TextOffset = new System.Drawing.Size(0, 0);
+            this.Email.UnderlinedStyle = true;
             // 
             // smallLabel1
             // 
             this.smallLabel1.AutoSize = true;
             this.smallLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.smallLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.smallLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.smallLabel1.Location = new System.Drawing.Point(69, 138);
-            this.smallLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel1.Location = new System.Drawing.Point(98, 204);
             this.smallLabel1.Name = "smallLabel1";
-            this.smallLabel1.Size = new System.Drawing.Size(139, 23);
-            this.smallLabel1.TabIndex = 18;
+            this.smallLabel1.Size = new System.Drawing.Size(119, 15);
+            this.smallLabel1.TabIndex = 24;
             this.smallLabel1.Text = "Enter your Email:";
-            // 
-            // hopeButton1
-            // 
-            this.hopeButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeButton1.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeButton1.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeButton1.Location = new System.Drawing.Point(327, 213);
-            this.hopeButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hopeButton1.Name = "hopeButton1";
-            this.hopeButton1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeButton1.Size = new System.Drawing.Size(160, 49);
-            this.hopeButton1.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeButton1.TabIndex = 17;
-            this.hopeButton1.Text = "Verify";
-            this.hopeButton1.TextColor = System.Drawing.Color.White;
-            this.hopeButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
-            // 
-            // hopeTextBox1
-            // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(219, 138);
-            this.hopeTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(395, 43);
-            this.hopeTextBox1.TabIndex = 16;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
             // 
             // FoxBigLabel1
             // 
             this.FoxBigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.FoxBigLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F);
+            this.FoxBigLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FoxBigLabel1.ForeColor = System.Drawing.Color.Black;
             this.FoxBigLabel1.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
             this.FoxBigLabel1.LineColor = System.Drawing.Color.Black;
-            this.FoxBigLabel1.Location = new System.Drawing.Point(148, 22);
-            this.FoxBigLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FoxBigLabel1.Location = new System.Drawing.Point(91, 60);
             this.FoxBigLabel1.Name = "FoxBigLabel1";
             this.FoxBigLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.FoxBigLabel1.Size = new System.Drawing.Size(369, 50);
-            this.FoxBigLabel1.TabIndex = 15;
+            this.FoxBigLabel1.Size = new System.Drawing.Size(325, 41);
+            this.FoxBigLabel1.TabIndex = 23;
             this.FoxBigLabel1.Text = "Forgot your Password?";
             // 
-            // hopePictureBox1
+            // cuiButton1
             // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(16, 22);
-            this.hopePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(289, 164);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.hopePictureBox1.TabIndex = 19;
-            this.hopePictureBox1.TabStop = false;
-            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.hopePictureBox1.Click += new System.EventHandler(this.hopePictureBox1_Click);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(100, 196);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(104, 16);
-            this.linkLabel2.TabIndex = 21;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Go back to login";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.cuiButton1.BackColor = System.Drawing.Color.Transparent;
+            this.cuiButton1.CheckButton = false;
+            this.cuiButton1.Checked = false;
+            this.cuiButton1.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiButton1.CheckedForeColor = System.Drawing.Color.White;
+            this.cuiButton1.CheckedImageTint = System.Drawing.Color.White;
+            this.cuiButton1.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiButton1.Content = "Cancel";
+            this.cuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.cuiButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuiButton1.ForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.HoverBackground = System.Drawing.Color.White;
+            this.cuiButton1.HoveredImageTint = System.Drawing.Color.White;
+            this.cuiButton1.HoverForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.HoverOutline = System.Drawing.Color.Aqua;
+            this.cuiButton1.Image = null;
+            this.cuiButton1.ImageAutoCenter = true;
+            this.cuiButton1.ImageExpand = new System.Drawing.Point(0, 0);
+            this.cuiButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.cuiButton1.Location = new System.Drawing.Point(118, 327);
+            this.cuiButton1.Name = "cuiButton1";
+            this.cuiButton1.NormalBackground = System.Drawing.Color.White;
+            this.cuiButton1.NormalForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.NormalImageTint = System.Drawing.Color.White;
+            this.cuiButton1.NormalOutline = System.Drawing.Color.DeepSkyBlue;
+            this.cuiButton1.OutlineThickness = 1F;
+            this.cuiButton1.PressedBackground = System.Drawing.Color.WhiteSmoke;
+            this.cuiButton1.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.cuiButton1.PressedImageTint = System.Drawing.Color.White;
+            this.cuiButton1.PressedOutline = System.Drawing.Color.Red;
+            this.cuiButton1.Rounding = new System.Windows.Forms.Padding(25);
+            this.cuiButton1.Size = new System.Drawing.Size(186, 45);
+            this.cuiButton1.TabIndex = 28;
+            this.cuiButton1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.cuiButton1.TextOffset = new System.Drawing.Point(0, 0);
             // 
             // forgotpass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.hopePictureBox1);
-            this.Controls.Add(this.displaypanel);
+            this.ClientSize = new System.Drawing.Size(704, 442);
+            this.Controls.Add(this.cuiButton1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.smallLabel1);
+            this.Controls.Add(this.FoxBigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "forgotpass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "forgotpass";
-            this.displaypanel.ResumeLayout(false);
-            this.displaypanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,12 +203,11 @@
 
         #endregion
 
-        private GSPMS.RPanel displaypanel;
-        internal ReaLTaiizor.Controls.FoxBigLabel FoxBigLabel1;
+        private System.Windows.Forms.Label label1;
+        private CuoreUI.Controls.cuiButton btnLogin;
+        private CuoreUI.Controls.cuiTextBox Email;
         private ReaLTaiizor.Controls.SmallLabel smallLabel1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        internal ReaLTaiizor.Controls.FoxBigLabel FoxBigLabel1;
+        private CuoreUI.Controls.cuiButton cuiButton1;
     }
 }

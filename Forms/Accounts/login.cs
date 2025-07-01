@@ -90,9 +90,11 @@ namespace FINAL_GSCPMS_OOP_PROJECT
         private void login_Load(object sender, EventArgs e)
         {
             // Load images (from files or Resources)
-            imageList.Add(Properties.Resources._473571710_1028756222602780_3200496696713397802_n_removebg_preview);
             imageList.Add(Properties.Resources._509419587_2439523766418370_2887840080118874903_n);
-            imageList.Add(Properties.Resources.image_2025_04_11_181516953_removebg_preview);
+            imageList.Add(Properties.Resources._512215710_996936782380198_6384260421581847698_n);
+            imageList.Add(Properties.Resources._513826234_501765012998473_3489009582914280092_n);
+            imageList.Add(Properties.Resources._514149210_1079235840807255_9117152410366927352_n);
+            imageList.Add(Properties.Resources._515093650_1814404569510179_258245541417495643_n);
 
             // Initial display
             MainPic.Image = imageList[0];

@@ -83,6 +83,46 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _512215710_996936782380198_6384260421581847698_n {
+            get {
+                object obj = ResourceManager.GetObject("512215710_996936782380198_6384260421581847698_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _513826234_501765012998473_3489009582914280092_n {
+            get {
+                object obj = ResourceManager.GetObject("513826234_501765012998473_3489009582914280092_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _514149210_1079235840807255_9117152410366927352_n {
+            get {
+                object obj = ResourceManager.GetObject("514149210_1079235840807255_9117152410366927352_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _515093650_1814404569510179_258245541417495643_n {
+            get {
+                object obj = ResourceManager.GetObject("515093650_1814404569510179_258245541417495643_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ahhhh {
             get {
                 object obj = ResourceManager.GetObject("ahhhh", resourceCulture);

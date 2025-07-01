@@ -101,6 +101,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\adminmanageDR.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -338,6 +344,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\515093650_1814404569510179_258245541417495643_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\512215710_996936782380198_6384260421581847698_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\514149210_1079235840807255_9117152410366927352_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\513826234_501765012998473_3489009582914280092_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
