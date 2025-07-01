@@ -336,5 +336,8 @@
   <ItemGroup>
     <None Include="Resources\tooltip.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

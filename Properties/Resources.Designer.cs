@@ -93,6 +93,16 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancel {
+            get {
+                object obj = ResourceManager.GetObject("Cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_2025_04_11_181516953_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image_2025-04-11_181516953-removebg-preview", resourceCulture);
