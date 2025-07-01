@@ -107,6 +107,12 @@
     <Compile Include="Forms\Accounts\Email.Designer.cs">
       <DependentUpon>Email.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\Resetpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\Resetpass.Designer.cs">
+      <DependentUpon>Resetpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\adminmanageDR.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -229,6 +235,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Accounts\Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Accounts\Resetpass.resx">
+      <DependentUpon>Resetpass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\adminmanageDR.resx">
       <DependentUpon>adminmanageDR.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +368,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\513826234_501765012998473_3489009582914280092_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\513185099_1647695195886936_3901401864525456360_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

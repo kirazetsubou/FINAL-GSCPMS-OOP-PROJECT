@@ -17,15 +17,18 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             InitializeComponent();
         }
 
-        private void hopePictureBox1_Click(object sender, EventArgs e)
-        {
 
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            login log = new login();
+            log.Show();
+            this.Hide();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Reset_Click(object sender, EventArgs e)
         {
-            login login = new login();
-            login.Show();
+            Email email = new Email();
+            email.Show();
             this.Hide();
         }
     }

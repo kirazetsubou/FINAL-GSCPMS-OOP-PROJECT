@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.AdsPanel = new CuoreUI.Controls.cuiPanel();
-            this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
-            this.OverlayPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.Username = new CuoreUI.Controls.cuiTextBox();
             this.smallLabel4 = new ReaLTaiizor.Controls.SmallLabel();
             this.create = new System.Windows.Forms.LinkLabel();
@@ -45,9 +43,11 @@
             this.Slidetimer = new System.Windows.Forms.Timer(this.components);
             this.Fadetimer = new System.Windows.Forms.Timer(this.components);
             this.Exit = new ReaLTaiizor.Controls.HopeRoundButton();
+            this.OverlayPic = new ReaLTaiizor.Controls.HopePictureBox();
+            this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.AdsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
             this.SuspendLayout();
             // 
             // AdsPanel
@@ -65,37 +65,6 @@
             this.AdsPanel.Rounding = new System.Windows.Forms.Padding(50);
             this.AdsPanel.Size = new System.Drawing.Size(329, 442);
             this.AdsPanel.TabIndex = 2;
-            // 
-            // MainPic
-            // 
-            this.MainPic.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.MainPic.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._509419587_2439523766418370_2887840080118874903_n;
-            this.MainPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPic.Location = new System.Drawing.Point(0, 0);
-            this.MainPic.Margin = new System.Windows.Forms.Padding(2);
-            this.MainPic.Name = "MainPic";
-            this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.MainPic.Size = new System.Drawing.Size(329, 442);
-            this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.MainPic.TabIndex = 0;
-            this.MainPic.TabStop = false;
-            this.MainPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
-            // OverlayPic
-            // 
-            this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OverlayPic.Location = new System.Drawing.Point(0, 0);
-            this.OverlayPic.Margin = new System.Windows.Forms.Padding(2);
-            this.OverlayPic.Name = "OverlayPic";
-            this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.OverlayPic.Size = new System.Drawing.Size(329, 442);
-            this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.OverlayPic.TabIndex = 1;
-            this.OverlayPic.TabStop = false;
-            this.OverlayPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.OverlayPic.Paint += new System.Windows.Forms.PaintEventHandler(this.OverlayPic_Paint);
             // 
             // Username
             // 
@@ -311,6 +280,37 @@
             this.Exit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // OverlayPic
+            // 
+            this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OverlayPic.Location = new System.Drawing.Point(0, 0);
+            this.OverlayPic.Margin = new System.Windows.Forms.Padding(2);
+            this.OverlayPic.Name = "OverlayPic";
+            this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.OverlayPic.Size = new System.Drawing.Size(329, 442);
+            this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.OverlayPic.TabIndex = 1;
+            this.OverlayPic.TabStop = false;
+            this.OverlayPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.OverlayPic.Paint += new System.Windows.Forms.PaintEventHandler(this.OverlayPic_Paint);
+            // 
+            // MainPic
+            // 
+            this.MainPic.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.MainPic.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._509419587_2439523766418370_2887840080118874903_n;
+            this.MainPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPic.Location = new System.Drawing.Point(0, 0);
+            this.MainPic.Margin = new System.Windows.Forms.Padding(2);
+            this.MainPic.Name = "MainPic";
+            this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.MainPic.Size = new System.Drawing.Size(329, 442);
+            this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.MainPic.TabIndex = 0;
+            this.MainPic.TabStop = false;
+            this.MainPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,8 +338,8 @@
             this.Load += new System.EventHandler(this.login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
             this.AdsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,10 +358,10 @@
         private ReaLTaiizor.Controls.HopeCheckBox Showpass;
         private System.Windows.Forms.LinkLabel Forget;
         private System.Windows.Forms.Timer Slidetimer;
-        private ReaLTaiizor.Controls.HopePictureBox MainPic;
         private System.Windows.Forms.Timer Fadetimer;
-        private ReaLTaiizor.Controls.HopePictureBox OverlayPic;
         private ReaLTaiizor.Controls.HopeRoundButton Exit;
+        private ReaLTaiizor.Controls.HopePictureBox OverlayPic;
+        private ReaLTaiizor.Controls.HopePictureBox MainPic;
     }
 }
 
