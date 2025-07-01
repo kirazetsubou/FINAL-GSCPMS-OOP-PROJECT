@@ -31,7 +31,7 @@
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.Gmail = new CuoreUI.Controls.cuiButton();
-            this.cuiPictureBox1 = new CuoreUI.Controls.cuiPictureBox();
+            this.EmailIcon = new CuoreUI.Controls.cuiPictureBox();
             this.SuspendLayout();
             // 
             // dungeonHeaderLabel1
@@ -98,21 +98,22 @@
             this.Gmail.TextOffset = new System.Drawing.Point(0, 0);
             this.Gmail.Click += new System.EventHandler(this.Gmail_Click);
             // 
-            // cuiPictureBox1
+            // EmailIcon
             // 
-            this.cuiPictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cuiPictureBox1.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._513185099_1647695195886936_3901401864525456360_n;
-            this.cuiPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cuiPictureBox1.Content = null;
-            this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
-            this.cuiPictureBox1.Location = new System.Drawing.Point(49, 12);
-            this.cuiPictureBox1.Name = "cuiPictureBox1";
-            this.cuiPictureBox1.OutlineThickness = 1F;
-            this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
-            this.cuiPictureBox1.Rotation = 0;
-            this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPictureBox1.Size = new System.Drawing.Size(150, 210);
-            this.cuiPictureBox1.TabIndex = 0;
+            this.EmailIcon.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.EmailIcon.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._513185099_1647695195886936_3901401864525456360_n;
+            this.EmailIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.EmailIcon.Content = null;
+            this.EmailIcon.ImageTint = System.Drawing.Color.White;
+            this.EmailIcon.Location = new System.Drawing.Point(49, 12);
+            this.EmailIcon.Name = "EmailIcon";
+            this.EmailIcon.OutlineThickness = 1F;
+            this.EmailIcon.PanelOutlineColor = System.Drawing.Color.Empty;
+            this.EmailIcon.Rotation = 0;
+            this.EmailIcon.Rounding = new System.Windows.Forms.Padding(8);
+            this.EmailIcon.Size = new System.Drawing.Size(150, 210);
+            this.EmailIcon.TabIndex = 0;
+            this.EmailIcon.MouseDown += new System.Windows.Forms.MouseEventHandler(this.EmailIcon_MouseDown);
             // 
             // Email
             // 
@@ -122,10 +123,11 @@
             this.Controls.Add(this.Gmail);
             this.Controls.Add(this.nightLabel1);
             this.Controls.Add(this.dungeonHeaderLabel1);
-            this.Controls.Add(this.cuiPictureBox1);
+            this.Controls.Add(this.EmailIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Email";
             this.Text = "Email";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Email_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +135,7 @@
 
         #endregion
 
-        private CuoreUI.Controls.cuiPictureBox cuiPictureBox1;
+        private CuoreUI.Controls.cuiPictureBox EmailIcon;
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
         private ReaLTaiizor.Controls.NightLabel nightLabel1;
         private CuoreUI.Controls.cuiButton Gmail;
