@@ -163,5 +163,15 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 );
             }
         }
+
+        private void forget_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+        }
+
+        private void create_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -35,16 +35,16 @@
             this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.Username = new CuoreUI.Controls.cuiTextBox();
             this.smallLabel4 = new ReaLTaiizor.Controls.SmallLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.create = new System.Windows.Forms.LinkLabel();
             this.smallLabel5 = new ReaLTaiizor.Controls.SmallLabel();
             this.smallLabel3 = new ReaLTaiizor.Controls.SmallLabel();
             this.btnLogin = new CuoreUI.Controls.cuiButton();
             this.Password = new CuoreUI.Controls.cuiTextBox();
             this.Showpass = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.Exit = new CuoreUI.Controls.cuiButton();
+            this.Forget = new System.Windows.Forms.LinkLabel();
             this.Slidetimer = new System.Windows.Forms.Timer(this.components);
             this.Fadetimer = new System.Windows.Forms.Timer(this.components);
+            this.Exit = new ReaLTaiizor.Controls.HopeRoundButton();
             this.AdsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
@@ -57,12 +57,13 @@
             this.AdsPanel.Controls.Add(this.MainPic);
             this.AdsPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.AdsPanel.Location = new System.Drawing.Point(0, 0);
+            this.AdsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.AdsPanel.Name = "AdsPanel";
             this.AdsPanel.OutlineThickness = 1F;
             this.AdsPanel.PanelColor = System.Drawing.Color.Transparent;
             this.AdsPanel.PanelOutlineColor = System.Drawing.Color.Transparent;
             this.AdsPanel.Rounding = new System.Windows.Forms.Padding(50);
-            this.AdsPanel.Size = new System.Drawing.Size(384, 537);
+            this.AdsPanel.Size = new System.Drawing.Size(329, 442);
             this.AdsPanel.TabIndex = 2;
             // 
             // OverlayPic
@@ -70,9 +71,10 @@
             this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OverlayPic.Location = new System.Drawing.Point(0, 0);
+            this.OverlayPic.Margin = new System.Windows.Forms.Padding(2);
             this.OverlayPic.Name = "OverlayPic";
             this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.OverlayPic.Size = new System.Drawing.Size(384, 537);
+            this.OverlayPic.Size = new System.Drawing.Size(329, 442);
             this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.OverlayPic.TabIndex = 1;
             this.OverlayPic.TabStop = false;
@@ -84,9 +86,10 @@
             this.MainPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
             this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPic.Location = new System.Drawing.Point(0, 0);
+            this.MainPic.Margin = new System.Windows.Forms.Padding(2);
             this.MainPic.Name = "MainPic";
             this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.MainPic.Size = new System.Drawing.Size(384, 537);
+            this.MainPic.Size = new System.Drawing.Size(329, 442);
             this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.MainPic.TabIndex = 0;
             this.MainPic.TabStop = false;
@@ -107,17 +110,17 @@
             this.Username.Image = null;
             this.Username.ImageExpand = new System.Drawing.Point(10, 10);
             this.Username.ImageOffset = new System.Drawing.Point(5, 5);
-            this.Username.Location = new System.Drawing.Point(488, 186);
-            this.Username.Margin = new System.Windows.Forms.Padding(5);
+            this.Username.Location = new System.Drawing.Point(366, 151);
+            this.Username.Margin = new System.Windows.Forms.Padding(4);
             this.Username.Multiline = false;
             this.Username.Name = "Username";
             this.Username.NormalImageTint = System.Drawing.Color.White;
-            this.Username.Padding = new System.Windows.Forms.Padding(19, 18, 19, 0);
+            this.Username.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
             this.Username.PasswordChar = false;
             this.Username.PlaceholderColor = System.Drawing.Color.Black;
             this.Username.PlaceholderText = " Email";
             this.Username.Rounding = new System.Windows.Forms.Padding(25);
-            this.Username.Size = new System.Drawing.Size(355, 55);
+            this.Username.Size = new System.Drawing.Size(266, 45);
             this.Username.TabIndex = 15;
             this.Username.TextOffset = new System.Drawing.Size(0, 0);
             this.Username.UnderlinedStyle = true;
@@ -128,26 +131,25 @@
             this.smallLabel4.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.smallLabel4.Location = new System.Drawing.Point(506, 74);
-            this.smallLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel4.Location = new System.Drawing.Point(380, 60);
             this.smallLabel4.Name = "smallLabel4";
-            this.smallLabel4.Size = new System.Drawing.Size(310, 46);
+            this.smallLabel4.Size = new System.Drawing.Size(247, 37);
             this.smallLabel4.TabIndex = 9;
             this.smallLabel4.Text = "Welcome Back";
             // 
-            // linkLabel2
+            // create
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkLabel2.Location = new System.Drawing.Point(678, 482);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(61, 16);
-            this.linkLabel2.TabIndex = 8;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Sign Up";
+            this.create.AutoSize = true;
+            this.create.BackColor = System.Drawing.Color.Transparent;
+            this.create.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.create.LinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.create.Location = new System.Drawing.Point(546, 392);
+            this.create.Name = "create";
+            this.create.Size = new System.Drawing.Size(47, 12);
+            this.create.TabIndex = 8;
+            this.create.TabStop = true;
+            this.create.Text = "Sign Up";
+            this.create.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.create_LinkClicked);
             // 
             // smallLabel5
             // 
@@ -155,10 +157,9 @@
             this.smallLabel5.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel5.Location = new System.Drawing.Point(551, 140);
-            this.smallLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel5.Location = new System.Drawing.Point(413, 114);
             this.smallLabel5.Name = "smallLabel5";
-            this.smallLabel5.Size = new System.Drawing.Size(251, 17);
+            this.smallLabel5.Size = new System.Drawing.Size(197, 14);
             this.smallLabel5.TabIndex = 10;
             this.smallLabel5.Text = "Login to your account to continue";
             // 
@@ -168,10 +169,9 @@
             this.smallLabel3.BackColor = System.Drawing.Color.Transparent;
             this.smallLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.smallLabel3.Location = new System.Drawing.Point(511, 482);
-            this.smallLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.smallLabel3.Location = new System.Drawing.Point(407, 392);
             this.smallLabel3.Name = "smallLabel3";
-            this.smallLabel3.Size = new System.Drawing.Size(159, 16);
+            this.smallLabel3.Size = new System.Drawing.Size(133, 12);
             this.smallLabel3.TabIndex = 7;
             this.smallLabel3.Text = "Dont have an account?";
             // 
@@ -197,8 +197,7 @@
             this.btnLogin.ImageAutoCenter = true;
             this.btnLogin.ImageExpand = new System.Drawing.Point(0, 0);
             this.btnLogin.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnLogin.Location = new System.Drawing.Point(541, 405);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Location = new System.Drawing.Point(407, 326);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.NormalBackground = System.Drawing.Color.White;
             this.btnLogin.NormalForeColor = System.Drawing.Color.Black;
@@ -210,7 +209,7 @@
             this.btnLogin.PressedImageTint = System.Drawing.Color.White;
             this.btnLogin.PressedOutline = System.Drawing.Color.Red;
             this.btnLogin.Rounding = new System.Windows.Forms.Padding(25);
-            this.btnLogin.Size = new System.Drawing.Size(248, 55);
+            this.btnLogin.Size = new System.Drawing.Size(186, 45);
             this.btnLogin.TabIndex = 14;
             this.btnLogin.TextAlignment = System.Drawing.StringAlignment.Center;
             this.btnLogin.TextOffset = new System.Drawing.Point(0, 0);
@@ -230,17 +229,17 @@
             this.Password.Image = null;
             this.Password.ImageExpand = new System.Drawing.Point(0, 0);
             this.Password.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Password.Location = new System.Drawing.Point(488, 263);
-            this.Password.Margin = new System.Windows.Forms.Padding(5);
+            this.Password.Location = new System.Drawing.Point(366, 214);
+            this.Password.Margin = new System.Windows.Forms.Padding(4);
             this.Password.Multiline = false;
             this.Password.Name = "Password";
             this.Password.NormalImageTint = System.Drawing.Color.White;
-            this.Password.Padding = new System.Windows.Forms.Padding(19, 18, 19, 0);
+            this.Password.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
             this.Password.PasswordChar = true;
             this.Password.PlaceholderColor = System.Drawing.SystemColors.WindowText;
             this.Password.PlaceholderText = "Password";
             this.Password.Rounding = new System.Windows.Forms.Padding(25);
-            this.Password.Size = new System.Drawing.Size(355, 55);
+            this.Password.Size = new System.Drawing.Size(266, 45);
             this.Password.TabIndex = 16;
             this.Password.TextOffset = new System.Drawing.Size(0, 0);
             this.Password.UnderlinedStyle = true;
@@ -259,66 +258,26 @@
             this.Showpass.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
             this.Showpass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Showpass.Location = new System.Drawing.Point(488, 353);
-            this.Showpass.Margin = new System.Windows.Forms.Padding(4);
+            this.Showpass.Location = new System.Drawing.Point(366, 287);
             this.Showpass.Name = "Showpass";
-            this.Showpass.Size = new System.Drawing.Size(139, 20);
+            this.Showpass.Size = new System.Drawing.Size(117, 20);
             this.Showpass.TabIndex = 5;
             this.Showpass.Text = "Show Password";
             this.Showpass.UseVisualStyleBackColor = false;
             this.Showpass.CheckedChanged += new System.EventHandler(this.Showpass_CheckedChanged);
             // 
-            // linkLabel1
+            // Forget
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(698, 354);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(130, 16);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot password?";
-            // 
-            // Exit
-            // 
-            this.Exit.CheckButton = false;
-            this.Exit.Checked = false;
-            this.Exit.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.Exit.CheckedForeColor = System.Drawing.Color.White;
-            this.Exit.CheckedImageTint = System.Drawing.Color.White;
-            this.Exit.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.Exit.Content = "";
-            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.Exit.ForeColor = System.Drawing.Color.Black;
-            this.Exit.HoverBackground = System.Drawing.Color.White;
-            this.Exit.HoveredImageTint = System.Drawing.Color.White;
-            this.Exit.HoverForeColor = System.Drawing.Color.Black;
-            this.Exit.HoverOutline = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Exit.Image = null;
-            this.Exit.ImageAutoCenter = true;
-            this.Exit.ImageExpand = new System.Drawing.Point(0, 0);
-            this.Exit.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Exit.Location = new System.Drawing.Point(823, 23);
-            this.Exit.Name = "Exit";
-            this.Exit.NormalBackground = System.Drawing.Color.White;
-            this.Exit.NormalForeColor = System.Drawing.Color.Black;
-            this.Exit.NormalImageTint = System.Drawing.Color.White;
-            this.Exit.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Exit.OutlineThickness = 1F;
-            this.Exit.PressedBackground = System.Drawing.Color.WhiteSmoke;
-            this.Exit.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.Exit.PressedImageTint = System.Drawing.Color.White;
-            this.Exit.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Exit.Rounding = new System.Windows.Forms.Padding(8);
-            this.Exit.Size = new System.Drawing.Size(58, 68);
-            this.Exit.TabIndex = 17;
-            this.Exit.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.Exit.TextOffset = new System.Drawing.Point(0, 0);
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            this.Forget.AutoSize = true;
+            this.Forget.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Forget.LinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.Forget.Location = new System.Drawing.Point(524, 288);
+            this.Forget.Name = "Forget";
+            this.Forget.Size = new System.Drawing.Size(105, 12);
+            this.Forget.TabIndex = 6;
+            this.Forget.TabStop = true;
+            this.Forget.Text = "Forgot password?";
+            this.Forget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forget_LinkClicked);
             // 
             // Slidetimer
             // 
@@ -328,27 +287,47 @@
             // 
             this.Fadetimer.Tick += new System.EventHandler(this.Fadetimer_Tick);
             // 
+            // Exit
+            // 
+            this.Exit.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.Cancel;
+            this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Exit.BorderColor = System.Drawing.Color.Transparent;
+            this.Exit.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.Exit.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Exit.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Exit.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Exit.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.Exit.Location = new System.Drawing.Point(650, 12);
+            this.Exit.Name = "Exit";
+            this.Exit.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.Exit.Size = new System.Drawing.Size(42, 43);
+            this.Exit.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.Exit.TabIndex = 17;
+            this.Exit.TextColor = System.Drawing.Color.White;
+            this.Exit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 537);
+            this.ClientSize = new System.Drawing.Size(704, 442);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.AdsPanel);
             this.Controls.Add(this.smallLabel3);
-            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.create);
             this.Controls.Add(this.smallLabel4);
             this.Controls.Add(this.smallLabel5);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.Showpass);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.Forget);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(2560, 1280);
-            this.MinimumSize = new System.Drawing.Size(253, 49);
+            this.MaximumSize = new System.Drawing.Size(1920, 1040);
+            this.MinimumSize = new System.Drawing.Size(190, 40);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -368,18 +347,18 @@
         private CuoreUI.Controls.cuiPanel AdsPanel;
         private CuoreUI.Controls.cuiTextBox Username;
         private ReaLTaiizor.Controls.SmallLabel smallLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel create;
         private ReaLTaiizor.Controls.SmallLabel smallLabel5;
         private ReaLTaiizor.Controls.SmallLabel smallLabel3;
         private CuoreUI.Controls.cuiButton btnLogin;
         private CuoreUI.Controls.cuiTextBox Password;
         private ReaLTaiizor.Controls.HopeCheckBox Showpass;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private CuoreUI.Controls.cuiButton Exit;
+        private System.Windows.Forms.LinkLabel Forget;
         private System.Windows.Forms.Timer Slidetimer;
         private ReaLTaiizor.Controls.HopePictureBox MainPic;
         private System.Windows.Forms.Timer Fadetimer;
         private ReaLTaiizor.Controls.HopePictureBox OverlayPic;
+        private ReaLTaiizor.Controls.HopeRoundButton Exit;
     }
 }
 
