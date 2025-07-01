@@ -413,7 +413,7 @@
             // cuiPanel7
             // 
             this.cuiPanel7.Controls.Add(this.cuiPanel9);
-            this.cuiPanel7.Location = new System.Drawing.Point(42, 27);
+            this.cuiPanel7.Location = new System.Drawing.Point(33, 27);
             this.cuiPanel7.Name = "cuiPanel7";
             this.cuiPanel7.OutlineThickness = 1F;
             this.cuiPanel7.PanelColor = System.Drawing.Color.White;
