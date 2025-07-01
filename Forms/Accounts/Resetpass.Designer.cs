@@ -62,7 +62,7 @@
             this.Password.Name = "Password";
             this.Password.NormalImageTint = System.Drawing.Color.White;
             this.Password.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
-            this.Password.PasswordChar = false;
+            this.Password.PasswordChar = true;
             this.Password.PlaceholderColor = System.Drawing.Color.Black;
             this.Password.PlaceholderText = "Password";
             this.Password.Rounding = new System.Windows.Forms.Padding(25);
@@ -93,7 +93,7 @@
             this.Confirmpassword.Name = "Confirmpassword";
             this.Confirmpassword.NormalImageTint = System.Drawing.Color.White;
             this.Confirmpassword.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
-            this.Confirmpassword.PasswordChar = false;
+            this.Confirmpassword.PasswordChar = true;
             this.Confirmpassword.PlaceholderColor = System.Drawing.Color.Black;
             this.Confirmpassword.PlaceholderText = "Confirm password";
             this.Confirmpassword.Rounding = new System.Windows.Forms.Padding(25);
@@ -153,6 +153,7 @@
             this.Reset.TabIndex = 29;
             this.Reset.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Reset.TextOffset = new System.Drawing.Point(0, 0);
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // Cancel
             // 
@@ -192,6 +193,7 @@
             this.Cancel.TabIndex = 30;
             this.Cancel.TextAlignment = System.Drawing.StringAlignment.Center;
             this.Cancel.TextOffset = new System.Drawing.Point(0, 0);
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // Showpass
             // 
@@ -213,6 +215,7 @@
             this.Showpass.TabIndex = 31;
             this.Showpass.Text = "Show Password";
             this.Showpass.UseVisualStyleBackColor = false;
+            this.Showpass.CheckedChanged += new System.EventHandler(this.Showpass_CheckedChanged);
             // 
             // cuiPanel1
             // 
@@ -221,7 +224,7 @@
             this.cuiPanel1.Location = new System.Drawing.Point(157, 238);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
-            this.cuiPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(8);
             this.cuiPanel1.Size = new System.Drawing.Size(222, 36);

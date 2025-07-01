@@ -16,5 +16,12 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         {
             InitializeComponent();
         }
+
+        private void Gmail_Click(object sender, EventArgs e)
+        {
+            Resetpass pass = new Resetpass();
+            pass.Show();
+            this.Close();
+        }
     }
 }

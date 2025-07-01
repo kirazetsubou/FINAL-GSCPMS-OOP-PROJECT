@@ -32,8 +32,8 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         }
         private void CheckPasswordMatch()
         {
-            string pass = Password.Text.Trim();
-            string confirm = Confirmpassword.Text.Trim();
+            string pass = Password.Content.Trim();
+            string confirm = Confirmpassword.Content.Trim();
 
             if (string.IsNullOrEmpty(confirm))
             {
@@ -57,5 +57,44 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             }
         }
 
+        private void Showpass_CheckedChanged(object sender, EventArgs e)
+        {
+            Password.PasswordChar = !Showpass.Checked;
+            Confirmpassword.PasswordChar = !Showpass.Checked;
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            string pass = Password.Content.Trim();
+            string confirm = Confirmpassword.Content.Trim();
+
+            if (pass == confirm && !string.IsNullOrEmpty(pass))
+            {
+                MessageBox.Show(
+                    "Password reset successful!\nYou can now log in.",
+                    "Success",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                login log = new login();
+                log.Show();
+                this.Close();
+
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Passwords do not match. Please check again.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+        }
     }
 }
