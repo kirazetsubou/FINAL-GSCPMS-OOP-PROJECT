@@ -73,6 +73,16 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _509419587_2439523766418370_2887840080118874903_n {
+            get {
+                object obj = ResourceManager.GetObject("509419587_2439523766418370_2887840080118874903_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ahhhh {
             get {
                 object obj = ResourceManager.GetObject("ahhhh", resourceCulture);
