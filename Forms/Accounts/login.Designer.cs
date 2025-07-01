@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
-            this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
+            this.AdsPanel = new CuoreUI.Controls.cuiPanel();
+            this.OverlayPic = new ReaLTaiizor.Controls.HopePictureBox();
+            this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.Username = new CuoreUI.Controls.cuiTextBox();
             this.smallLabel4 = new ReaLTaiizor.Controls.SmallLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -39,23 +42,55 @@
             this.Password = new CuoreUI.Controls.cuiTextBox();
             this.Showpass = new ReaLTaiizor.Controls.HopeCheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.cuiButton1 = new CuoreUI.Controls.cuiButton();
+            this.Exit = new CuoreUI.Controls.cuiButton();
+            this.Slidetimer = new System.Windows.Forms.Timer(this.components);
+            this.Fadetimer = new System.Windows.Forms.Timer(this.components);
+            this.AdsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
             this.SuspendLayout();
             // 
-            // cuiPanel1
+            // AdsPanel
             // 
-            this.cuiPanel1.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._509419587_2439523766418370_2887840080118874903_n;
-            this.cuiPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cuiPanel1.Location = new System.Drawing.Point(0, 0);
-            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cuiPanel1.Name = "cuiPanel1";
-            this.cuiPanel1.OutlineThickness = 1F;
-            this.cuiPanel1.PanelColor = System.Drawing.Color.Transparent;
-            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.Transparent;
-            this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(50);
-            this.cuiPanel1.Size = new System.Drawing.Size(512, 554);
-            this.cuiPanel1.TabIndex = 2;
+            this.AdsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AdsPanel.Controls.Add(this.OverlayPic);
+            this.AdsPanel.Controls.Add(this.MainPic);
+            this.AdsPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AdsPanel.Location = new System.Drawing.Point(0, 0);
+            this.AdsPanel.Name = "AdsPanel";
+            this.AdsPanel.OutlineThickness = 1F;
+            this.AdsPanel.PanelColor = System.Drawing.Color.Transparent;
+            this.AdsPanel.PanelOutlineColor = System.Drawing.Color.Transparent;
+            this.AdsPanel.Rounding = new System.Windows.Forms.Padding(50);
+            this.AdsPanel.Size = new System.Drawing.Size(384, 450);
+            this.AdsPanel.TabIndex = 2;
+            // 
+            // OverlayPic
+            // 
+            this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OverlayPic.Location = new System.Drawing.Point(0, 0);
+            this.OverlayPic.Name = "OverlayPic";
+            this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.OverlayPic.Size = new System.Drawing.Size(384, 450);
+            this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.OverlayPic.TabIndex = 1;
+            this.OverlayPic.TabStop = false;
+            this.OverlayPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.OverlayPic.Paint += new System.Windows.Forms.PaintEventHandler(this.OverlayPic_Paint);
+            // 
+            // MainPic
+            // 
+            this.MainPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPic.Location = new System.Drawing.Point(0, 0);
+            this.MainPic.Name = "MainPic";
+            this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.MainPic.Size = new System.Drawing.Size(384, 450);
+            this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.MainPic.TabIndex = 0;
+            this.MainPic.TabStop = false;
+            this.MainPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
             // Username
             // 
@@ -246,52 +281,60 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot password?";
             // 
-            // cuiButton1
+            // Exit
             // 
-            this.cuiButton1.CheckButton = false;
-            this.cuiButton1.Checked = false;
-            this.cuiButton1.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.cuiButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.cuiButton1.CheckedImageTint = System.Drawing.Color.White;
-            this.cuiButton1.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.cuiButton1.Content = "Your text here!";
-            this.cuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.cuiButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cuiButton1.ForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.HoverBackground = System.Drawing.Color.White;
-            this.cuiButton1.HoveredImageTint = System.Drawing.Color.White;
-            this.cuiButton1.HoverForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.HoverOutline = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cuiButton1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.Cancel;
-            this.cuiButton1.ImageAutoCenter = true;
-            this.cuiButton1.ImageExpand = new System.Drawing.Point(0, 0);
-            this.cuiButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.cuiButton1.Location = new System.Drawing.Point(973, 15);
-            this.cuiButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cuiButton1.Name = "cuiButton1";
-            this.cuiButton1.NormalBackground = System.Drawing.Color.White;
-            this.cuiButton1.NormalForeColor = System.Drawing.Color.Black;
-            this.cuiButton1.NormalImageTint = System.Drawing.Color.White;
-            this.cuiButton1.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cuiButton1.OutlineThickness = 1F;
-            this.cuiButton1.PressedBackground = System.Drawing.Color.WhiteSmoke;
-            this.cuiButton1.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.cuiButton1.PressedImageTint = System.Drawing.Color.White;
-            this.cuiButton1.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.cuiButton1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiButton1.Size = new System.Drawing.Size(77, 84);
-            this.cuiButton1.TabIndex = 17;
-            this.cuiButton1.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.cuiButton1.TextOffset = new System.Drawing.Point(0, 0);
+            this.Exit.CheckButton = false;
+            this.Exit.Checked = false;
+            this.Exit.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.Exit.CheckedForeColor = System.Drawing.Color.White;
+            this.Exit.CheckedImageTint = System.Drawing.Color.White;
+            this.Exit.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.Exit.Content = "";
+            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.Exit.ForeColor = System.Drawing.Color.Black;
+            this.Exit.HoverBackground = System.Drawing.Color.White;
+            this.Exit.HoveredImageTint = System.Drawing.Color.White;
+            this.Exit.HoverForeColor = System.Drawing.Color.Black;
+            this.Exit.HoverOutline = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Exit.Image = null;
+            this.Exit.ImageAutoCenter = true;
+            this.Exit.ImageExpand = new System.Drawing.Point(0, 0);
+            this.Exit.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Exit.Location = new System.Drawing.Point(730, 12);
+            this.Exit.Name = "Exit";
+            this.Exit.NormalBackground = System.Drawing.Color.White;
+            this.Exit.NormalForeColor = System.Drawing.Color.Black;
+            this.Exit.NormalImageTint = System.Drawing.Color.White;
+            this.Exit.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Exit.OutlineThickness = 1F;
+            this.Exit.PressedBackground = System.Drawing.Color.WhiteSmoke;
+            this.Exit.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Exit.PressedImageTint = System.Drawing.Color.White;
+            this.Exit.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Exit.Rounding = new System.Windows.Forms.Padding(8);
+            this.Exit.Size = new System.Drawing.Size(58, 68);
+            this.Exit.TabIndex = 17;
+            this.Exit.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Exit.TextOffset = new System.Drawing.Point(0, 0);
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // Slidetimer
+            // 
+            this.Slidetimer.Tick += new System.EventHandler(this.Slidetimer_Tick);
+            // 
+            // Fadetimer
+            // 
+            this.Fadetimer.Tick += new System.EventHandler(this.Fadetimer_Tick);
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.cuiButton1);
-            this.Controls.Add(this.cuiPanel1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Exit);
+            this.Controls.Add(this.AdsPanel);
             this.Controls.Add(this.smallLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.smallLabel4);
@@ -310,7 +353,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.login_MouseDown);
+            this.AdsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MainPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,7 +365,7 @@
 
         #endregion
 
-        private CuoreUI.Controls.cuiPanel cuiPanel1;
+        private CuoreUI.Controls.cuiPanel AdsPanel;
         private CuoreUI.Controls.cuiTextBox Username;
         private ReaLTaiizor.Controls.SmallLabel smallLabel4;
         private System.Windows.Forms.LinkLabel linkLabel2;
@@ -328,7 +375,11 @@
         private CuoreUI.Controls.cuiTextBox Password;
         private ReaLTaiizor.Controls.HopeCheckBox Showpass;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private CuoreUI.Controls.cuiButton cuiButton1;
+        private CuoreUI.Controls.cuiButton Exit;
+        private System.Windows.Forms.Timer Slidetimer;
+        private ReaLTaiizor.Controls.HopePictureBox MainPic;
+        private System.Windows.Forms.Timer Fadetimer;
+        private ReaLTaiizor.Controls.HopePictureBox OverlayPic;
     }
 }
 
