@@ -307,6 +307,7 @@
             this.Exit.TabIndex = 17;
             this.Exit.TextColor = System.Drawing.Color.White;
             this.Exit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // login
             // 

@@ -82,7 +82,6 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 }
             }
         }
-
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -166,12 +165,16 @@ namespace FINAL_GSCPMS_OOP_PROJECT
 
         private void forget_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+            forgotpass forgot = new forgotpass();
+            forgot.Show();
+            this.Hide();
         }
 
         private void create_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            register reg = new register();
+            reg.Show();
+            this.Hide();
         }
     }
 }
