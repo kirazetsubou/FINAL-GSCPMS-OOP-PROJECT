@@ -24,37 +24,25 @@ namespace FINAL_GSCPMS_OOP_PROJECT
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // width of ellipse
+            int nHeightEllipse // height of ellipse
+        );
+
 
         public login()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           register registerForm = new register();
-            registerForm.Show();
-            this.Hide();
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            forgotpass forgotPassForm = new forgotpass();
-            forgotPassForm.Show();
-            this.Hide();
-        }
-
-        private void hopePictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        private void login_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -62,37 +50,9 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-
-        private void rPanel2_MouseMove(object sender, MouseEventArgs e)
+        private void Showpass_CheckedChanged(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
-        private void rPanel1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
-        private void hopePictureBox1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
-        private void hopeCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            Password.UseSystemPasswordChar = !hopeCheckBox1.Checked;
+            Password.PasswordChar = !Showpass.Checked;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -117,5 +77,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT
                 }
             }
         }
+
+     
     }
 }
