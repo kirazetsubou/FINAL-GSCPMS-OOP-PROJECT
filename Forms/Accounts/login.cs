@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -35,6 +36,10 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             int nHeightEllipse // height of ellipse
         );
 
+        private List<Image> imageList = new List<Image>();
+        private int currentIndex = 0;
+        private float fadeStep = 0.05f; // Lower = smoother
+        private float currentOpacity = 0;
 
         public login()
         {
@@ -78,6 +83,85 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             }
         }
 
-     
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            // Load images (from files or Resources)
+            imageList.Add(Properties.Resources._473571710_1028756222602780_3200496696713397802_n_removebg_preview);
+            imageList.Add(Properties.Resources._509419587_2439523766418370_2887840080118874903_n);
+            imageList.Add(Properties.Resources.image_2025_04_11_181516953_removebg_preview);
+
+            // Initial display
+            MainPic.Image = imageList[0];
+            MainPic.Dock = DockStyle.Fill;
+            OverlayPic.Dock = DockStyle.Fill;
+
+            // No border
+            MainPic.SizeMode = PictureBoxSizeMode.StretchImage;
+            OverlayPic.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            OverlayPic.BackColor = Color.Transparent;
+
+            // Start slideshow
+            Slidetimer.Interval = 5000; // 5 seconds between slides
+            Slidetimer.Tick += Slidetimer_Tick;
+            Slidetimer.Start();
+
+            // Fade timer setup
+            Fadetimer.Interval = 50; // ms per fade step
+            Fadetimer.Tick += Fadetimer_Tick;
+        }
+
+        private void Slidetimer_Tick(object sender, EventArgs e)
+        {
+            // Set next image on overlay
+            currentIndex = (currentIndex + 1) % imageList.Count;
+            OverlayPic.Image = imageList[currentIndex];
+            OverlayPic.Visible = true;
+            currentOpacity = 0;
+            Fadetimer.Start();
+        }
+
+        private void Fadetimer_Tick(object sender, EventArgs e)
+        {
+            currentOpacity += fadeStep;
+            if (currentOpacity >= 1.0f)
+            {
+                // Done fading
+                Fadetimer.Stop();
+                MainPic.Image = OverlayPic.Image;
+                OverlayPic.Visible = false;
+            }
+            else
+            {
+                OverlayPic.Invalidate(); // Force redraw
+            }
+        }
+
+        private void OverlayPic_Paint(object sender, PaintEventArgs e)
+        {
+            if (OverlayPic.Image != null)
+            {
+                ColorMatrix matrix = new ColorMatrix();
+                matrix.Matrix33 = currentOpacity;
+
+                ImageAttributes attr = new ImageAttributes();
+                attr.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+
+                e.Graphics.DrawImage(
+                    OverlayPic.Image,
+                    new Rectangle(0, 0, OverlayPic.Width, OverlayPic.Height),
+                    0, 0,
+                    OverlayPic.Image.Width,
+                    OverlayPic.Image.Height,
+                    GraphicsUnit.Pixel,
+                    attr
+                );
+            }
+        }
     }
 }
