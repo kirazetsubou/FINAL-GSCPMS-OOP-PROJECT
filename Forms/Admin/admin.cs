@@ -39,5 +39,45 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Admin
         {
 
         }
+
+        private void cuiPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cuiGradientPanel1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cuiPictureBox1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foreverButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foreverButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foreverButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foreverButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cuiPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

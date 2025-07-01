@@ -28,177 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rPanel1 = new GSPMS.RPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.rPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
+            this.cuiPanel2 = new CuoreUI.Controls.cuiPanel();
+            this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
+            this.foreverButton4 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton3 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
+            this.foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
+            this.cuiPictureBox1 = new CuoreUI.Controls.cuiPictureBox();
+            this.cuiGradientPanel1 = new CuoreUI.Controls.cuiGradientPanel();
             this.SuspendLayout();
             // 
-            // label4
+            // cuiPanel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(179, 494);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "System Logs";
+            this.cuiPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cuiPanel2.Location = new System.Drawing.Point(252, 0);
+            this.cuiPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cuiPanel2.Name = "cuiPanel2";
+            this.cuiPanel2.OutlineThickness = 1F;
+            this.cuiPanel2.PanelColor = System.Drawing.Color.Cyan;
+            this.cuiPanel2.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel2.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel2.Size = new System.Drawing.Size(1050, 98);
+            this.cuiPanel2.TabIndex = 15;
             // 
-            // label3
+            // cuiPanel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(164, 421);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Manage Services";
+            this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cuiPanel1.Location = new System.Drawing.Point(252, 0);
+            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cuiPanel1.Name = "cuiPanel1";
+            this.cuiPanel1.OutlineThickness = 1F;
+            this.cuiPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPanel1.Size = new System.Drawing.Size(1050, 838);
+            this.cuiPanel1.TabIndex = 14;
             // 
-            // label2
+            // foreverButton4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(162, 352);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Manage Accounts";
+            this.foreverButton4.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton4.Location = new System.Drawing.Point(0, 446);
+            this.foreverButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.foreverButton4.Name = "foreverButton4";
+            this.foreverButton4.Rounded = false;
+            this.foreverButton4.Size = new System.Drawing.Size(252, 52);
+            this.foreverButton4.TabIndex = 13;
+            this.foreverButton4.Text = "System Logs";
+            this.foreverButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // label1
+            // foreverButton3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(179, 281);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Dashboard";
+            this.foreverButton3.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton3.Location = new System.Drawing.Point(0, 382);
+            this.foreverButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.foreverButton3.Name = "foreverButton3";
+            this.foreverButton3.Rounded = false;
+            this.foreverButton3.Size = new System.Drawing.Size(252, 52);
+            this.foreverButton3.TabIndex = 12;
+            this.foreverButton3.Text = "Manage Services";
+            this.foreverButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // rPanel1
+            // foreverButton2
             // 
-            this.rPanel1.BackColor = System.Drawing.Color.White;
-            this.rPanel1.BorderColor = System.Drawing.Color.White;
-            this.rPanel1.Controls.Add(this.hopePictureBox1);
-            this.rPanel1.Edge = 20;
-            this.rPanel1.Location = new System.Drawing.Point(22, 26);
-            this.rPanel1.Name = "rPanel1";
-            this.rPanel1.Size = new System.Drawing.Size(300, 190);
-            this.rPanel1.TabIndex = 5;
+            this.foreverButton2.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton2.Location = new System.Drawing.Point(0, 320);
+            this.foreverButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.foreverButton2.Name = "foreverButton2";
+            this.foreverButton2.Rounded = false;
+            this.foreverButton2.Size = new System.Drawing.Size(252, 52);
+            this.foreverButton2.TabIndex = 11;
+            this.foreverButton2.Text = "Manage Accounts";
+            this.foreverButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // panel1
+            // foreverButton1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.rPanel1);
-            this.panel1.Controls.Add(this.iconButton4);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 838);
-            this.panel1.TabIndex = 30;
+            this.foreverButton1.BackColor = System.Drawing.Color.Transparent;
+            this.foreverButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(168)))), ((int)(((byte)(109)))));
+            this.foreverButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foreverButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.foreverButton1.Location = new System.Drawing.Point(0, 261);
+            this.foreverButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.foreverButton1.Name = "foreverButton1";
+            this.foreverButton1.Rounded = false;
+            this.foreverButton1.Size = new System.Drawing.Size(252, 52);
+            this.foreverButton1.TabIndex = 10;
+            this.foreverButton1.Text = "Dashboard";
+            this.foreverButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // hopePictureBox1
+            // cuiPictureBox1
             // 
-            this.hopePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopePictureBox1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.logo;
-            this.hopePictureBox1.Location = new System.Drawing.Point(0, 6);
-            this.hopePictureBox1.Name = "hopePictureBox1";
-            this.hopePictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.hopePictureBox1.Size = new System.Drawing.Size(298, 181);
-            this.hopePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.hopePictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.hopePictureBox1.TabIndex = 0;
-            this.hopePictureBox1.TabStop = false;
-            this.hopePictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.cuiPictureBox1.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources._473571710_1028756222602780_3200496696713397802_n_removebg_preview;
+            this.cuiPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cuiPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cuiPictureBox1.Content = null;
+            this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
+            this.cuiPictureBox1.Location = new System.Drawing.Point(17, 27);
+            this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.cuiPictureBox1.Name = "cuiPictureBox1";
+            this.cuiPictureBox1.OutlineThickness = 1F;
+            this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
+            this.cuiPictureBox1.Rotation = 0;
+            this.cuiPictureBox1.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiPictureBox1.Size = new System.Drawing.Size(209, 179);
+            this.cuiPictureBox1.TabIndex = 9;
             // 
-            // iconButton4
+            // cuiGradientPanel1
             // 
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(39, 477);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(85, 50);
-            this.iconButton4.TabIndex = 4;
-            this.iconButton4.Text = "iconButton4";
-            this.iconButton4.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(39, 404);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(85, 50);
-            this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(37, 335);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(85, 50);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(39, 264);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(85, 50);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.cuiGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cuiGradientPanel1.GradientAngle = 0F;
+            this.cuiGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.cuiGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.cuiGradientPanel1.Name = "cuiGradientPanel1";
+            this.cuiGradientPanel1.OutlineThickness = 1F;
+            this.cuiGradientPanel1.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.PanelColor2 = System.Drawing.Color.Transparent;
+            this.cuiGradientPanel1.PanelOutlineColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.PanelOutlineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cuiGradientPanel1.Rounding = new System.Windows.Forms.Padding(8);
+            this.cuiGradientPanel1.Size = new System.Drawing.Size(252, 838);
+            this.cuiGradientPanel1.TabIndex = 8;
             // 
             // patientDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1302, 838);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cuiPanel2);
+            this.Controls.Add(this.cuiPanel1);
+            this.Controls.Add(this.foreverButton4);
+            this.Controls.Add(this.foreverButton3);
+            this.Controls.Add(this.foreverButton2);
+            this.Controls.Add(this.foreverButton1);
+            this.Controls.Add(this.cuiPictureBox1);
+            this.Controls.Add(this.cuiGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "patientDB";
             this.Text = "patientDB";
-            this.rPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private GSPMS.RPanel rPanel1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Panel panel1;
+
+        private CuoreUI.Controls.cuiPanel cuiPanel2;
+        private CuoreUI.Controls.cuiPanel cuiPanel1;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton4;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton3;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton2;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton1;
+        private CuoreUI.Controls.cuiPictureBox cuiPictureBox1;
+        private CuoreUI.Controls.cuiGradientPanel cuiGradientPanel1;
     }
 }

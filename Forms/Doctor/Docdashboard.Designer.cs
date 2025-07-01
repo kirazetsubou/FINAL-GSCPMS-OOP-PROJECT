@@ -45,7 +45,7 @@
             this.foreverButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.foreverButton4.Location = new System.Drawing.Point(0, 352);
-            this.foreverButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.foreverButton4.Margin = new System.Windows.Forms.Padding(4);
             this.foreverButton4.Name = "foreverButton4";
             this.foreverButton4.Rounded = false;
             this.foreverButton4.Size = new System.Drawing.Size(252, 52);
@@ -60,7 +60,7 @@
             this.foreverButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.foreverButton3.Location = new System.Drawing.Point(0, 293);
-            this.foreverButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.foreverButton3.Margin = new System.Windows.Forms.Padding(4);
             this.foreverButton3.Name = "foreverButton3";
             this.foreverButton3.Rounded = false;
             this.foreverButton3.Size = new System.Drawing.Size(252, 52);
@@ -75,7 +75,7 @@
             this.foreverButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.foreverButton2.Location = new System.Drawing.Point(0, 234);
-            this.foreverButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.foreverButton2.Margin = new System.Windows.Forms.Padding(4);
             this.foreverButton2.Name = "foreverButton2";
             this.foreverButton2.Rounded = false;
             this.foreverButton2.Size = new System.Drawing.Size(252, 52);
@@ -90,7 +90,7 @@
             this.foreverButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foreverButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.foreverButton1.Location = new System.Drawing.Point(0, 175);
-            this.foreverButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.foreverButton1.Margin = new System.Windows.Forms.Padding(4);
             this.foreverButton1.Name = "foreverButton1";
             this.foreverButton1.Rounded = false;
             this.foreverButton1.Size = new System.Drawing.Size(252, 52);
@@ -106,7 +106,7 @@
             this.cuiPictureBox1.Content = null;
             this.cuiPictureBox1.ImageTint = System.Drawing.Color.White;
             this.cuiPictureBox1.Location = new System.Drawing.Point(17, 47);
-            this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cuiPictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.cuiPictureBox1.Name = "cuiPictureBox1";
             this.cuiPictureBox1.OutlineThickness = 1F;
             this.cuiPictureBox1.PanelOutlineColor = System.Drawing.Color.Empty;
@@ -120,7 +120,7 @@
             this.cuiGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiGradientPanel1.GradientAngle = 0F;
             this.cuiGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.cuiGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cuiGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.cuiGradientPanel1.Name = "cuiGradientPanel1";
             this.cuiGradientPanel1.OutlineThickness = 1F;
             this.cuiGradientPanel1.PanelColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
@@ -141,7 +141,7 @@
             this.cuiPanel2.PanelColor = System.Drawing.Color.Cyan;
             this.cuiPanel2.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel2.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPanel2.Size = new System.Drawing.Size(1114, 64);
+            this.cuiPanel2.Size = new System.Drawing.Size(1114, 98);
             this.cuiPanel2.TabIndex = 12;
             // 
             // cuiPanel1
