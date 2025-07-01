@@ -266,6 +266,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Resetpass";
             this.Text = "Resetpass";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resetpass_MouseDown);
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Iconstatus)).EndInit();

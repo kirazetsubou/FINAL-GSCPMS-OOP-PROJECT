@@ -198,6 +198,7 @@
             this.Name = "forgotpass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "forgotpass";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.forgotpass_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
