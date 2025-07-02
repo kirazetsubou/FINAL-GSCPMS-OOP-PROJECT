@@ -35,6 +35,19 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         public Resetpass()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+            PassTimer.Interval = 200; // milliseconds
+            PassTimer.Tick += PassTimer_Tick;
+            PassTimer.Start();
+        }
+        private void Resetpass_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
 
         private void Password_ContentChanged(object sender, EventArgs e)
@@ -46,33 +59,8 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         {
             CheckPasswordMatch();
         }
-        private void CheckPasswordMatch()
-        {
-            string pass = Password.Content.Trim();
-            string confirm = Confirmpassword.Content.Trim();
-
-            if (string.IsNullOrEmpty(confirm))
-            {
-                Matchstatus.Text = "Both passwords must match";
-                Matchstatus.ForeColor = Color.Gray;
-                // placeholder icon
-                return;
-            }
-
-            if (pass == confirm)
-            {
-                Matchstatus.Text = "Passwords match";
-                Matchstatus.ForeColor = Color.FromArgb(0, 200, 120); // green
-                // ✔ icon
-            }
-            else
-            {
-                Matchstatus.Text = "Passwords do not match";
-                Matchstatus.ForeColor = Color.FromArgb(255, 85, 85); // red
-                 // ❌ icon
-            }
-        }
-
+       
+      
         private void Showpass_CheckedChanged(object sender, EventArgs e)
         {
             Password.PasswordChar = !Showpass.Checked;
@@ -89,37 +77,111 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             string pass = Password.Content.Trim();
             string confirm = Confirmpassword.Content.Trim();
 
-            if (pass == confirm && !string.IsNullOrEmpty(pass))
+            // Check if password is strong
+            if (!IsPasswordStrong(pass))
             {
                 MessageBox.Show(
-                    "Password reset successful!\nYou can now log in.",
-                    "Success",
+                    "⚠ Password must be at least 8 characters and contain:\n• Uppercase\n• Lowercase\n• Number\n• Symbol",
+                    "Weak Password",
                     MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
+                    MessageBoxIcon.Warning
                 );
-                login log = new login();
-                log.Show();
-                this.Close();
-
+                return;
             }
-            else
+
+            // Check if confirm password is empty
+            if (string.IsNullOrEmpty(confirm))
             {
                 MessageBox.Show(
-                    "Passwords do not match. Please check again.",
-                    "Error",
+                    "Please confirm your password.",
+                    "Confirmation Missing",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            // Check if passwords match
+            if (pass != confirm && confirm != pass)
+            {
+                MessageBox.Show(
+                    "Passwords do not match. Please check and try again.",
+                    "Mismatch",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                 );
+                return;
+            }
+
+            // If all checks pass
+            MessageBox.Show(
+                "✅ Password reset successful!\nYou can now log in.",
+                "Success",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+
+            // Optional: Close/reset
+            // this.Close();
+        }
+        private bool IsPasswordStrong(string password)
+        {
+            if (password.Length < 8)
+                return false;
+
+            bool hasUpper = password.Any(char.IsUpper);
+            bool hasLower = password.Any(char.IsLower);
+            bool hasDigit = password.Any(char.IsDigit);
+            bool hasSpecial = password.Any(ch => !char.IsLetterOrDigit(ch));
+
+            return hasUpper && hasLower && hasDigit && hasSpecial;
+        }
+        private void CheckPasswordMatch()
+        {
+            string pass = Password.Content.Trim();
+            string confirm = Confirmpassword.Content.Trim();
+
+            // If confirm field is empty, show neutral hint
+            if (string.IsNullOrEmpty(pass) && pass == confirm)
+            {
+                Matchstatus.Text = "Both passwords must match";
+                Matchstatus.ForeColor = Color.Gray;
+                Iconstatus.Image = Properties.Resources.warning__4_;
+                Iconstatus.SizeMode = PictureBoxSizeMode.StretchImage;
+                return;
+            }
+
+            // Check for password strength first
+            if (!IsPasswordStrong(pass))
+            {
+                Matchstatus.Text = "Password must be at least 8 characters\nwith uppercase, lowercase, number & symbol";
+                Matchstatus.ForeColor = Color.OrangeRed;
+                Iconstatus.Image = Properties.Resources.warning__2_;
+                Iconstatus.SizeMode = PictureBoxSizeMode.StretchImage;
+                // custom orange ⚠ icon
+                return;
+            }
+
+            // Match check
+            if (pass == confirm)
+            {
+                Matchstatus.Text = "Passwords match";
+                Matchstatus.ForeColor = Color.FromArgb(0, 200, 120);
+                Iconstatus.Image = Properties.Resources.warning__4_;
+                Iconstatus.SizeMode = PictureBoxSizeMode.StretchImage;// green ✔
+            }
+            else
+            {
+                Matchstatus.Text = "Passwords do not match";
+                Matchstatus.ForeColor = Color.FromArgb(255, 85, 85);
+                Iconstatus.Image = Properties.Resources.warning;
+                Iconstatus.SizeMode = PictureBoxSizeMode.StretchImage;// red ✖
             }
         }
 
-        private void Resetpass_MouseDown(object sender, MouseEventArgs e)
+        private void PassTimer_Tick(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            CheckPasswordMatch();
         }
     }
 }

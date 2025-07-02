@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Password = new CuoreUI.Controls.cuiTextBox();
             this.Confirmpassword = new CuoreUI.Controls.cuiTextBox();
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.Reset = new CuoreUI.Controls.cuiButton();
             this.Cancel = new CuoreUI.Controls.cuiButton();
             this.Showpass = new ReaLTaiizor.Controls.HopeCheckBox();
-            this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
             this.Iconstatus = new System.Windows.Forms.PictureBox();
             this.Matchstatus = new ReaLTaiizor.Controls.DungeonLabel();
-            this.cuiPanel1.SuspendLayout();
+            this.PassTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Iconstatus)).BeginInit();
             this.SuspendLayout();
             // 
@@ -209,7 +209,7 @@
             this.Showpass.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
             this.Showpass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Showpass.Location = new System.Drawing.Point(141, 280);
+            this.Showpass.Location = new System.Drawing.Point(141, 292);
             this.Showpass.Name = "Showpass";
             this.Showpass.Size = new System.Drawing.Size(117, 20);
             this.Showpass.TabIndex = 31;
@@ -217,25 +217,12 @@
             this.Showpass.UseVisualStyleBackColor = false;
             this.Showpass.CheckedChanged += new System.EventHandler(this.Showpass_CheckedChanged);
             // 
-            // cuiPanel1
-            // 
-            this.cuiPanel1.Controls.Add(this.Iconstatus);
-            this.cuiPanel1.Controls.Add(this.Matchstatus);
-            this.cuiPanel1.Location = new System.Drawing.Point(157, 238);
-            this.cuiPanel1.Name = "cuiPanel1";
-            this.cuiPanel1.OutlineThickness = 1F;
-            this.cuiPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPanel1.Size = new System.Drawing.Size(222, 36);
-            this.cuiPanel1.TabIndex = 32;
-            // 
             // Iconstatus
             // 
-            this.Iconstatus.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Iconstatus.Location = new System.Drawing.Point(0, 0);
+            this.Iconstatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Iconstatus.Location = new System.Drawing.Point(154, 244);
             this.Iconstatus.Name = "Iconstatus";
-            this.Iconstatus.Size = new System.Drawing.Size(30, 36);
+            this.Iconstatus.Size = new System.Drawing.Size(20, 20);
             this.Iconstatus.TabIndex = 33;
             this.Iconstatus.TabStop = false;
             // 
@@ -243,20 +230,25 @@
             // 
             this.Matchstatus.AutoSize = true;
             this.Matchstatus.BackColor = System.Drawing.Color.Transparent;
-            this.Matchstatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.Matchstatus.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matchstatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.Matchstatus.Location = new System.Drawing.Point(39, 7);
+            this.Matchstatus.Location = new System.Drawing.Point(180, 244);
             this.Matchstatus.Name = "Matchstatus";
-            this.Matchstatus.Size = new System.Drawing.Size(112, 20);
+            this.Matchstatus.Size = new System.Drawing.Size(170, 16);
             this.Matchstatus.TabIndex = 33;
-            this.Matchstatus.Text = "dungeonLabel1";
+            this.Matchstatus.Text = "Both password must  match";
+            // 
+            // PassTimer
+            // 
+            this.PassTimer.Tick += new System.EventHandler(this.PassTimer_Tick);
             // 
             // Resetpass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 403);
-            this.Controls.Add(this.cuiPanel1);
+            this.Controls.Add(this.Iconstatus);
+            this.Controls.Add(this.Matchstatus);
             this.Controls.Add(this.Showpass);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Reset);
@@ -267,8 +259,6 @@
             this.Name = "Resetpass";
             this.Text = "Resetpass";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resetpass_MouseDown);
-            this.cuiPanel1.ResumeLayout(false);
-            this.cuiPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Iconstatus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -283,8 +273,8 @@
         private CuoreUI.Controls.cuiButton Reset;
         private CuoreUI.Controls.cuiButton Cancel;
         private ReaLTaiizor.Controls.HopeCheckBox Showpass;
-        private CuoreUI.Controls.cuiPanel cuiPanel1;
         private ReaLTaiizor.Controls.DungeonLabel Matchstatus;
         private System.Windows.Forms.PictureBox Iconstatus;
+        private System.Windows.Forms.Timer PassTimer;
     }
 }

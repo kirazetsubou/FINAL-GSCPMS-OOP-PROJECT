@@ -372,5 +372,23 @@
   <ItemGroup>
     <None Include="Resources\513185099_1647695195886936_3901401864525456360_n.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %283%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
