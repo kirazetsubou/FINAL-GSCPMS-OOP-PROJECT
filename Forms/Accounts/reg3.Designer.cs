@@ -234,7 +234,7 @@
             this.Password.Name = "Password";
             this.Password.NormalImageTint = System.Drawing.Color.White;
             this.Password.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
-            this.Password.PasswordChar = false;
+            this.Password.PasswordChar = true;
             this.Password.PlaceholderColor = System.Drawing.Color.Black;
             this.Password.PlaceholderText = " ";
             this.Password.Rounding = new System.Windows.Forms.Padding(25);
@@ -264,7 +264,7 @@
             this.Confirmpassword.Name = "Confirmpassword";
             this.Confirmpassword.NormalImageTint = System.Drawing.Color.White;
             this.Confirmpassword.Padding = new System.Windows.Forms.Padding(16, 14, 16, 0);
-            this.Confirmpassword.PasswordChar = false;
+            this.Confirmpassword.PasswordChar = true;
             this.Confirmpassword.PlaceholderColor = System.Drawing.Color.Black;
             this.Confirmpassword.PlaceholderText = "";
             this.Confirmpassword.Rounding = new System.Windows.Forms.Padding(25);

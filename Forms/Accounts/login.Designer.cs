@@ -44,8 +44,8 @@
             this.Forget = new System.Windows.Forms.LinkLabel();
             this.Slidetimer = new System.Windows.Forms.Timer(this.components);
             this.Fadetimer = new System.Windows.Forms.Timer(this.components);
-            this.Exit = new ReaLTaiizor.Controls.HopeRoundButton();
-            this.hopeRoundButton1 = new ReaLTaiizor.Controls.HopeRoundButton();
+            this.cuiButton1 = new CuoreUI.Controls.cuiButton();
+            this.Exit = new CuoreUI.Controls.cuiButton();
             this.AdsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
@@ -250,10 +250,10 @@
             // Showpass
             // 
             this.Showpass.AutoSize = true;
-            this.Showpass.BackColor = System.Drawing.Color.LightGray;
+            this.Showpass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Showpass.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Showpass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Showpass.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
+            this.Showpass.DisabledColor = System.Drawing.Color.White;
             this.Showpass.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.Showpass.Enable = true;
             this.Showpass.EnabledCheckedColor = System.Drawing.Color.DeepSkyBlue;
@@ -290,56 +290,91 @@
             // 
             this.Fadetimer.Tick += new System.EventHandler(this.Fadetimer_Tick);
             // 
+            // cuiButton1
+            // 
+            this.cuiButton1.CheckButton = false;
+            this.cuiButton1.Checked = false;
+            this.cuiButton1.CheckedBackground = System.Drawing.Color.Gainsboro;
+            this.cuiButton1.CheckedForeColor = System.Drawing.Color.Red;
+            this.cuiButton1.CheckedImageTint = System.Drawing.Color.White;
+            this.cuiButton1.CheckedOutline = System.Drawing.Color.DeepSkyBlue;
+            this.cuiButton1.Content = "Sign in with google";
+            this.cuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.cuiButton1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuiButton1.ForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.HoverBackground = System.Drawing.Color.White;
+            this.cuiButton1.HoveredImageTint = System.Drawing.Color.White;
+            this.cuiButton1.HoverForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cuiButton1.HoverOutline = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cuiButton1.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.google;
+            this.cuiButton1.ImageAutoCenter = false;
+            this.cuiButton1.ImageExpand = new System.Drawing.Point(0, 0);
+            this.cuiButton1.ImageOffset = new System.Drawing.Point(25, 0);
+            this.cuiButton1.Location = new System.Drawing.Point(407, 418);
+            this.cuiButton1.Name = "cuiButton1";
+            this.cuiButton1.NormalBackground = System.Drawing.Color.White;
+            this.cuiButton1.NormalForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.NormalImageTint = System.Drawing.Color.White;
+            this.cuiButton1.NormalOutline = System.Drawing.Color.DeepSkyBlue;
+            this.cuiButton1.OutlineThickness = 1F;
+            this.cuiButton1.PressedBackground = System.Drawing.Color.WhiteSmoke;
+            this.cuiButton1.PressedForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.cuiButton1.PressedImageTint = System.Drawing.Color.White;
+            this.cuiButton1.PressedOutline = System.Drawing.Color.Red;
+            this.cuiButton1.Rounding = new System.Windows.Forms.Padding(25);
+            this.cuiButton1.Size = new System.Drawing.Size(186, 52);
+            this.cuiButton1.TabIndex = 18;
+            this.cuiButton1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.cuiButton1.TextOffset = new System.Drawing.Point(0, 0);
+            // 
             // Exit
             // 
-            this.Exit.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.Cancel;
-            this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Exit.BorderColor = System.Drawing.Color.Transparent;
-            this.Exit.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Exit.CheckButton = false;
+            this.Exit.Checked = false;
+            this.Exit.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.Exit.CheckedForeColor = System.Drawing.Color.White;
+            this.Exit.CheckedImageTint = System.Drawing.Color.White;
+            this.Exit.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.Exit.Content = "";
             this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.Exit.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Exit.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Exit.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.Exit.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.Exit.Location = new System.Drawing.Point(650, 12);
+            this.Exit.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.ForeColor = System.Drawing.Color.Black;
+            this.Exit.HoverBackground = System.Drawing.Color.White;
+            this.Exit.HoveredImageTint = System.Drawing.Color.White;
+            this.Exit.HoverForeColor = System.Drawing.Color.Black;
+            this.Exit.HoverOutline = System.Drawing.Color.Aqua;
+            this.Exit.Image = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.Cancel;
+            this.Exit.ImageAutoCenter = true;
+            this.Exit.ImageExpand = new System.Drawing.Point(15, 15);
+            this.Exit.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Exit.Location = new System.Drawing.Point(633, 12);
             this.Exit.Name = "Exit";
-            this.Exit.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.Exit.Size = new System.Drawing.Size(42, 43);
-            this.Exit.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.Exit.TabIndex = 17;
-            this.Exit.TextColor = System.Drawing.Color.White;
-            this.Exit.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.Exit.NormalBackground = System.Drawing.Color.White;
+            this.Exit.NormalForeColor = System.Drawing.Color.Black;
+            this.Exit.NormalImageTint = System.Drawing.Color.White;
+            this.Exit.NormalOutline = System.Drawing.Color.Transparent;
+            this.Exit.OutlineThickness = 1F;
+            this.Exit.PressedBackground = System.Drawing.Color.WhiteSmoke;
+            this.Exit.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Exit.PressedImageTint = System.Drawing.Color.White;
+            this.Exit.PressedOutline = System.Drawing.Color.Red;
+            this.Exit.Rounding = new System.Windows.Forms.Padding(20);
+            this.Exit.Size = new System.Drawing.Size(49, 45);
+            this.Exit.TabIndex = 19;
+            this.Exit.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Exit.TextOffset = new System.Drawing.Point(0, 0);
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
-            // 
-            // hopeRoundButton1
-            // 
-            this.hopeRoundButton1.BackgroundImage = global::FINAL_GSCPMS_OOP_PROJECT.Properties.Resources.Cancel;
-            this.hopeRoundButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.hopeRoundButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.hopeRoundButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeRoundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeRoundButton1.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeRoundButton1.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeRoundButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeRoundButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeRoundButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeRoundButton1.Location = new System.Drawing.Point(425, 421);
-            this.hopeRoundButton1.Name = "hopeRoundButton1";
-            this.hopeRoundButton1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRoundButton1.Size = new System.Drawing.Size(152, 43);
-            this.hopeRoundButton1.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeRoundButton1.TabIndex = 18;
-            this.hopeRoundButton1.TextColor = System.Drawing.Color.White;
-            this.hopeRoundButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 491);
-            this.Controls.Add(this.hopeRoundButton1);
             this.Controls.Add(this.Exit);
+            this.Controls.Add(this.cuiButton1);
             this.Controls.Add(this.AdsPanel);
             this.Controls.Add(this.smallLabel3);
             this.Controls.Add(this.create);
@@ -382,10 +417,10 @@
         private System.Windows.Forms.LinkLabel Forget;
         private System.Windows.Forms.Timer Slidetimer;
         private System.Windows.Forms.Timer Fadetimer;
-        private ReaLTaiizor.Controls.HopeRoundButton Exit;
         private ReaLTaiizor.Controls.HopePictureBox OverlayPic;
         private ReaLTaiizor.Controls.HopePictureBox MainPic;
-        private ReaLTaiizor.Controls.HopeRoundButton hopeRoundButton1;
+        private CuoreUI.Controls.cuiButton cuiButton1;
+        private CuoreUI.Controls.cuiButton Exit;
     }
 }
 

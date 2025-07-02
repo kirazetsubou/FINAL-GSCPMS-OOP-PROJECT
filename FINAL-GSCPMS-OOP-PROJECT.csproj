@@ -101,17 +101,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\Consent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\Consent.Designer.cs">
+      <DependentUpon>Consent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Accounts\Email.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Accounts\Email.Designer.cs">
       <DependentUpon>Email.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\Privacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\Privacy.Designer.cs">
+      <DependentUpon>Privacy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Accounts\Resetpass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Accounts\Resetpass.Designer.cs">
       <DependentUpon>Resetpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Accounts\Terms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Accounts\Terms.Designer.cs">
+      <DependentUpon>Terms.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Admin\adminmanageDR.cs">
       <SubType>UserControl</SubType>
@@ -235,11 +253,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Accounts\Consent.resx">
+      <DependentUpon>Consent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts\Email.resx">
       <DependentUpon>Email.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Accounts\Privacy.resx">
+      <DependentUpon>Privacy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Accounts\Resetpass.resx">
       <DependentUpon>Resetpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Accounts\Terms.resx">
+      <DependentUpon>Terms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\adminmanageDR.resx">
       <DependentUpon>adminmanageDR.cs</DependentUpon>
@@ -392,6 +419,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\communication.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\513902541_1237443037432861_8164231273269791899_n.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

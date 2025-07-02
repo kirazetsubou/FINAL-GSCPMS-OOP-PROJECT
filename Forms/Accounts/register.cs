@@ -231,7 +231,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             {
                 // Proceed with registration logic
                 MessageBox.Show("All fields are valid. Proceed to login");
-                login Back = new login();
+                Consent Back = new Consent();
                 Back.Show();
                 this.Close();
             }
@@ -249,7 +249,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 {
                     if (string.IsNullOrWhiteSpace(textBox.Text))
                     {
-                        textBox.BackColor = Color.Red;
+                        textBox.BackColor = Color.HotPink;
                         return false;
                     }
                     else
@@ -261,7 +261,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 {
                     if (comboBox.SelectedIndex == -1)
                     {
-                        comboBox.BackColor = Color.Red;
+                        comboBox.BackColor = Color.HotPink;
                         return false;
                     }
                     else

@@ -4,24 +4,17 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 {
-    public partial class reg1 : UserControl
+    public partial class Privacy : Form
     {
-        public reg1()
+        public Privacy()
         {
             InitializeComponent();
         }
-
-        private void BDate_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

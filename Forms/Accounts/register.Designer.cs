@@ -36,15 +36,15 @@
             this.cuiColorPicker1 = new CuoreUI.Components.cuiColorPicker(this.components);
             this.trackerProgress = new CuoreUI.Controls.cuiProgressTrackerHorizontal();
             this.Adspanel = new CuoreUI.Controls.cuiPanel();
+            this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
+            this.OverlayPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.btnBack = new CuoreUI.Controls.cuiButton();
             this.btnNext = new CuoreUI.Controls.cuiButton();
-            this.OverlayPic = new ReaLTaiizor.Controls.HopePictureBox();
-            this.MainPic = new ReaLTaiizor.Controls.HopePictureBox();
             this.Slidetimer = new System.Windows.Forms.Timer(this.components);
             this.Fadetimer = new System.Windows.Forms.Timer(this.components);
             this.Adspanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).BeginInit();
             this.SuspendLayout();
             // 
             // smallLabel3
@@ -77,9 +77,9 @@
             this.displaypanel.BackColor = System.Drawing.Color.LightGray;
             this.displaypanel.BorderColor = System.Drawing.Color.White;
             this.displaypanel.Edge = 20;
-            this.displaypanel.Location = new System.Drawing.Point(346, 83);
+            this.displaypanel.Location = new System.Drawing.Point(343, 71);
             this.displaypanel.Name = "displaypanel";
-            this.displaypanel.Size = new System.Drawing.Size(580, 528);
+            this.displaypanel.Size = new System.Drawing.Size(601, 528);
             this.displaypanel.TabIndex = 11;
             this.displaypanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.displaypanel_MouseMove);
             // 
@@ -104,7 +104,7 @@
             this.trackerProgress.Name = "trackerProgress";
             this.trackerProgress.Rounding = 15;
             this.trackerProgress.ShowSymbols = true;
-            this.trackerProgress.Size = new System.Drawing.Size(578, 45);
+            this.trackerProgress.Size = new System.Drawing.Size(598, 45);
             this.trackerProgress.TabIndex = 0;
             this.trackerProgress.TaskForeColor = System.Drawing.Color.DeepSkyBlue;
             this.trackerProgress.Tasks = new string[] {
@@ -113,7 +113,7 @@
         "Account Setup"};
             this.trackerProgress.TasksProgress = 2;
             this.trackerProgress.Text = "cuiProgressTrackerHorizontal1";
-            this.trackerProgress.TrackColor = System.Drawing.Color.Red;
+            this.trackerProgress.TrackColor = System.Drawing.Color.DeepSkyBlue;
             // 
             // Adspanel
             // 
@@ -128,6 +128,33 @@
             this.Adspanel.Rounding = new System.Windows.Forms.Padding(25);
             this.Adspanel.Size = new System.Drawing.Size(302, 528);
             this.Adspanel.TabIndex = 15;
+            // 
+            // MainPic
+            // 
+            this.MainPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPic.Location = new System.Drawing.Point(0, 0);
+            this.MainPic.Name = "MainPic";
+            this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.MainPic.Size = new System.Drawing.Size(302, 528);
+            this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.MainPic.TabIndex = 1;
+            this.MainPic.TabStop = false;
+            this.MainPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // OverlayPic
+            // 
+            this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
+            this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OverlayPic.Location = new System.Drawing.Point(0, 0);
+            this.OverlayPic.Name = "OverlayPic";
+            this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.OverlayPic.Size = new System.Drawing.Size(302, 528);
+            this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.OverlayPic.TabIndex = 0;
+            this.OverlayPic.TabStop = false;
+            this.OverlayPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.OverlayPic.Paint += new System.Windows.Forms.PaintEventHandler(this.OverlayPic_Paint);
             // 
             // btnBack
             // 
@@ -151,7 +178,7 @@
             this.btnBack.ImageAutoCenter = true;
             this.btnBack.ImageExpand = new System.Drawing.Point(0, 0);
             this.btnBack.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnBack.Location = new System.Drawing.Point(410, 642);
+            this.btnBack.Location = new System.Drawing.Point(441, 642);
             this.btnBack.Name = "btnBack";
             this.btnBack.NormalBackground = System.Drawing.Color.White;
             this.btnBack.NormalForeColor = System.Drawing.Color.Black;
@@ -191,7 +218,7 @@
             this.btnNext.ImageAutoCenter = true;
             this.btnNext.ImageExpand = new System.Drawing.Point(0, 0);
             this.btnNext.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnNext.Location = new System.Drawing.Point(712, 642);
+            this.btnNext.Location = new System.Drawing.Point(748, 642);
             this.btnNext.Name = "btnNext";
             this.btnNext.NormalBackground = System.Drawing.Color.White;
             this.btnNext.NormalForeColor = System.Drawing.Color.Black;
@@ -209,33 +236,6 @@
             this.btnNext.TextOffset = new System.Drawing.Point(0, 0);
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // OverlayPic
-            // 
-            this.OverlayPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.OverlayPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OverlayPic.Location = new System.Drawing.Point(0, 0);
-            this.OverlayPic.Name = "OverlayPic";
-            this.OverlayPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.OverlayPic.Size = new System.Drawing.Size(302, 528);
-            this.OverlayPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.OverlayPic.TabIndex = 0;
-            this.OverlayPic.TabStop = false;
-            this.OverlayPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.OverlayPic.Paint += new System.Windows.Forms.PaintEventHandler(this.OverlayPic_Paint);
-            // 
-            // MainPic
-            // 
-            this.MainPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.MainPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPic.Location = new System.Drawing.Point(0, 0);
-            this.MainPic.Name = "MainPic";
-            this.MainPic.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.MainPic.Size = new System.Drawing.Size(302, 528);
-            this.MainPic.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.MainPic.TabIndex = 1;
-            this.MainPic.TabStop = false;
-            this.MainPic.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            // 
             // Slidetimer
             // 
             this.Slidetimer.Tick += new System.EventHandler(this.Slidetimer_Tick);
@@ -249,7 +249,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(935, 715);
+            this.ClientSize = new System.Drawing.Size(983, 715);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.smallLabel3);
@@ -265,8 +265,8 @@
             this.Load += new System.EventHandler(this.register_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.register_MouseDown);
             this.Adspanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverlayPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
