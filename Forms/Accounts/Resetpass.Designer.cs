@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resetpass));
             this.Password = new CuoreUI.Controls.cuiTextBox();
             this.Confirmpassword = new CuoreUI.Controls.cuiTextBox();
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
@@ -256,6 +257,7 @@
             this.Controls.Add(this.Confirmpassword);
             this.Controls.Add(this.Password);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Resetpass";
             this.Text = "Resetpass";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Resetpass_MouseDown);

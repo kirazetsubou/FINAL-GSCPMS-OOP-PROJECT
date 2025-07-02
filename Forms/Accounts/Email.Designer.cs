@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Email));
             this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.Gmail = new CuoreUI.Controls.cuiButton();
@@ -125,6 +126,7 @@
             this.Controls.Add(this.dungeonHeaderLabel1);
             this.Controls.Add(this.EmailIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Email";
             this.Text = "Email";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Email_MouseDown);

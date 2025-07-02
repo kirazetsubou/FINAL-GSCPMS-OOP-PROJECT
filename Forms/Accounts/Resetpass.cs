@@ -115,7 +115,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 
             // If all checks pass
             MessageBox.Show(
-                "✅ Password reset successful!\nYou can now log in.",
+                "Password reset successful!\nYou can now log in.",
                 "Success",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
@@ -167,7 +167,7 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             {
                 Matchstatus.Text = "Passwords match";
                 Matchstatus.ForeColor = Color.FromArgb(0, 200, 120);
-                Iconstatus.Image = Properties.Resources.warning__4_;
+                Iconstatus.Image = Properties.Resources.check;
                 Iconstatus.SizeMode = PictureBoxSizeMode.StretchImage;// green ✔
             }
             else

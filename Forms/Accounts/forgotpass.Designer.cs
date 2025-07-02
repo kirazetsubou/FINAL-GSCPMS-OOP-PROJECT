@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forgotpass));
             this.label1 = new System.Windows.Forms.Label();
             this.Reset = new CuoreUI.Controls.cuiButton();
             this.Email = new CuoreUI.Controls.cuiTextBox();
@@ -195,6 +196,7 @@
             this.Controls.Add(this.smallLabel1);
             this.Controls.Add(this.FoxBigLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "forgotpass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "forgotpass";
