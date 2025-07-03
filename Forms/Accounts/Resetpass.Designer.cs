@@ -199,7 +199,7 @@
             // Showpass
             // 
             this.Showpass.AutoSize = true;
-            this.Showpass.BackColor = System.Drawing.Color.LightGray;
+            this.Showpass.BackColor = System.Drawing.Color.White;
             this.Showpass.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.Showpass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Showpass.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(198)))), ((int)(((byte)(202)))));
@@ -209,7 +209,7 @@
             this.Showpass.EnabledStringColor = System.Drawing.Color.DimGray;
             this.Showpass.EnabledUncheckedColor = System.Drawing.Color.DimGray;
             this.Showpass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Showpass.ForeColor = System.Drawing.Color.Gray;
+            this.Showpass.ForeColor = System.Drawing.Color.Black;
             this.Showpass.Location = new System.Drawing.Point(141, 292);
             this.Showpass.Name = "Showpass";
             this.Showpass.Size = new System.Drawing.Size(117, 20);
