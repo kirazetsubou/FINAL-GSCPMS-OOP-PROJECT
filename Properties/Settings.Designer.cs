@@ -33,5 +33,17 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Properties {
                 return ((string)(this["EmployeeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PrivacyAccepted {
+            get {
+                return ((bool)(this["PrivacyAccepted"]));
+            }
+            set {
+                this["PrivacyAccepted"] = value;
+            }
+        }
     }
 }

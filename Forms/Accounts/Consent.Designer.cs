@@ -160,6 +160,7 @@
             this.linkLabel3.TabIndex = 23;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Privacy Policy.\r\n";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel1
             // 

@@ -15,6 +15,8 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         public Consent()
         {
             InitializeComponent();
+            linkLabel3.Enabled = !Properties.Settings.Default.PrivacyAccepted;
+
         }
 
         private void Authorize_Click(object sender, EventArgs e)
@@ -29,6 +31,13 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             register register = new register();
             register.Show();
             this.Close();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Privacy legal = new Privacy();
+            legal.Show();
+            this.Hide();  
         }
     }
 }
