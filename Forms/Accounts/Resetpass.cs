@@ -69,7 +69,9 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 
         private void Cancel_Click(object sender, EventArgs e)
         {
-
+            login log = new login();
+            log.Show();
+            this.Hide();
         }
 
         private void Reset_Click(object sender, EventArgs e)

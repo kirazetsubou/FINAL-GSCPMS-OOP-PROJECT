@@ -205,6 +205,7 @@ Address: [Your Office Address]
         private void ValidateInputs()
         {
             btnContinue.Enabled = Agree.Checked && Slider.Value == Slider.MaxValue;
+            Agree.Enabled = Slider.Value == Slider.MaxValue;
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -213,6 +214,7 @@ Address: [Your Office Address]
             MessageBox.Show("Consent saved. Proceeding...", "Thank You");
             Consent back = new Consent();
             back.Show();
+            this.Hide();
         }
 
         private void Scroll_Tick(object sender, EventArgs e)

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using CuoreUI.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -38,12 +40,18 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         public register()
         {
             InitializeComponent();
+
         }
 
         private void register_Load(object sender, EventArgs e)
         {
-            // Initialize progress tracker items once
+           
           
+            AttachFieldResetHandlers(reg1Control);
+            AttachFieldResetHandlers(reg2Control);
+            AttachFieldResetHandlers(reg3Control);
+            // Initialize progress tracker items once
+
             currentStep = 1;
 
             OpenChildForm(reg1Control);
@@ -75,7 +83,6 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
             Fadetimer.Interval = 50; // ms per fade step
             Fadetimer.Tick += Fadetimer_Tick;
         }
-
         private void OpenChildForm(UserControl childForm)
         {
             if (currentChildForm != null)
@@ -243,55 +250,77 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         }
         private bool ValidateAllControls(Control parent)
         {
+            System.Diagnostics.Debug.WriteLine($"--- Validating container: {parent.Name} ---");
+
+            bool allValid = true;
+
             foreach (Control c in parent.Controls)
             {
-                if (c is TextBox textBox)
+                System.Diagnostics.Debug.WriteLine($"Checking control: {c.Name} - Type: {c.GetType().Name}");
+
+                // TextBox Validation
+                if (c is cuiTextBox textBox)
                 {
-                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                    System.Diagnostics.Debug.WriteLine($"TextBox '{c.Name}' value: '{textBox.Text}'");
+
+                    bool isEmpty = string.IsNullOrWhiteSpace(textBox.Content);
+                    bool isTooLong = false;
+
+                    if (textBox.Name == "Firstname" && textBox.Content.Length > 50)
+                        isTooLong = true;
+                    else if (textBox.Name == "Lastname" && textBox.Content.Length > 50)
+                        isTooLong = true;
+                    else if (textBox.Name == "MI" && textBox.Content.Length > 2)
+                        isTooLong = true;
+
+                    if (isEmpty || isTooLong)
                     {
-                        textBox.BackColor = Color.HotPink;
-                        return false;
+                        textBox.ForeColor = Color.Red;
+                        allValid = false;
+
+                        if (isTooLong)
+                        {
+                            ToolTip tip = new ToolTip();
+                            tip.Show("Too many characters", textBox, 0, -20, 3000);
+                        }
                     }
                     else
                     {
-                        textBox.BackColor = SystemColors.Window;
+                        textBox.ForeColor = SystemColors.ControlText;
                     }
                 }
-                else if (c is ComboBox comboBox)
+                // ComboBox Validation
+                else if (c is cuiComboBox comboBox)
                 {
                     if (comboBox.SelectedIndex == -1)
                     {
-                        comboBox.BackColor = Color.HotPink;
-                        return false;
-                    }
-                    else
-                    {
-                        comboBox.BackColor = SystemColors.Window;
+                        comboBox.ForeColor = Color.Red;
+                        allValid = false;
                     }
                 }
-                else if (c is DateTimePicker dateTimePicker)
+                // DateTimePicker Validation (Optional)
+                else if (c is cuiCalendarDatePicker dateTimePicker)
                 {
-                    // Optional: add date range validation
-                    if (dateTimePicker.Value == null)
+                    DateTime selectedDate = dateTimePicker.Value;
+
+                    if (selectedDate == DateTime.Today) // or any other logic
                     {
-                        dateTimePicker.CalendarForeColor = Color.Red;
-                        return false;
-                    }
-                    else
-                    {
-                        dateTimePicker.CalendarForeColor = SystemColors.WindowText;
+                        dateTimePicker.ForeColor = Color.Red;
+                        allValid = false;
                     }
                 }
 
-                // Recursively validate child controls (e.g., inside panels)
+                // Recursively validate children
                 if (c.HasChildren)
                 {
                     if (!ValidateAllControls(c))
-                        return false;
+                    {
+                        allValid = false;
+                    }
                 }
             }
 
-            return true;
+            return allValid;
         }
         private void Slidetimer_Tick(object sender, EventArgs e)
         {
@@ -340,6 +369,36 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
                 );
             }
         }
+        private void AttachFieldResetHandlers(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is cuiTextBox textBox)
+                {
+                    textBox.Click += (s, e) => textBox.ForeColor = SystemColors.ControlText;
+                    textBox.TextChanged += (s, e) =>
+                    {
+                        if (!string.IsNullOrWhiteSpace(textBox.Content))
+                        {
+                            textBox.ForeColor = SystemColors.ControlText;
+                        }
+                    };
+                }
+                else if (c is cuiComboBox comboBox)
+                {
+                    comboBox.Click += (s, e) => comboBox.ForeColor = SystemColors.ControlText;
+                    comboBox.SelectedIndexChanged += (s, e) =>
+                    {
+                        comboBox.ForeColor = SystemColors.ControlText;
+                    };
+                }
+                else if (c.HasChildren)
+                {
+                    AttachFieldResetHandlers(c); // Recurse for nested panels, etc.
+                }
+            }
+        }
+
 
     }
 }

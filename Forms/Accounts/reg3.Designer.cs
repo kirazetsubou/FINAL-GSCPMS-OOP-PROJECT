@@ -49,11 +49,11 @@
             // 
             this.smallLabel3.AutoSize = true;
             this.smallLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.smallLabel3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.smallLabel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.smallLabel3.Location = new System.Drawing.Point(26, 196);
             this.smallLabel3.Name = "smallLabel3";
-            this.smallLabel3.Size = new System.Drawing.Size(56, 13);
+            this.smallLabel3.Size = new System.Drawing.Size(63, 14);
             this.smallLabel3.TabIndex = 25;
             this.smallLabel3.Text = "Password";
             // 
@@ -61,11 +61,11 @@
             // 
             this.smallLabel2.AutoSize = true;
             this.smallLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.smallLabel2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.smallLabel2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.smallLabel2.Location = new System.Drawing.Point(26, 130);
             this.smallLabel2.Name = "smallLabel2";
-            this.smallLabel2.Size = new System.Drawing.Size(91, 13);
+            this.smallLabel2.Size = new System.Drawing.Size(96, 14);
             this.smallLabel2.TabIndex = 22;
             this.smallLabel2.Text = "Contact Number";
             // 
@@ -73,11 +73,11 @@
             // 
             this.smallLabel1.AutoSize = true;
             this.smallLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.smallLabel1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.smallLabel1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.smallLabel1.Location = new System.Drawing.Point(26, 62);
             this.smallLabel1.Name = "smallLabel1";
-            this.smallLabel1.Size = new System.Drawing.Size(34, 13);
+            this.smallLabel1.Size = new System.Drawing.Size(36, 14);
             this.smallLabel1.TabIndex = 21;
             this.smallLabel1.Text = "Email";
             // 
@@ -85,11 +85,11 @@
             // 
             this.smallLabel4.AutoSize = true;
             this.smallLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.smallLabel4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.smallLabel4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.smallLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.smallLabel4.Location = new System.Drawing.Point(26, 265);
             this.smallLabel4.Name = "smallLabel4";
-            this.smallLabel4.Size = new System.Drawing.Size(100, 13);
+            this.smallLabel4.Size = new System.Drawing.Size(111, 14);
             this.smallLabel4.TabIndex = 27;
             this.smallLabel4.Text = "Confirm Password";
             // 
@@ -104,11 +104,11 @@
             this.hopeCheckBox1.EnabledCheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.hopeCheckBox1.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.hopeCheckBox1.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
-            this.hopeCheckBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hopeCheckBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hopeCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeCheckBox1.Location = new System.Drawing.Point(32, 388);
             this.hopeCheckBox1.Name = "hopeCheckBox1";
-            this.hopeCheckBox1.Size = new System.Drawing.Size(113, 20);
+            this.hopeCheckBox1.Size = new System.Drawing.Size(117, 20);
             this.hopeCheckBox1.TabIndex = 28;
             this.hopeCheckBox1.Text = "Show Password";
             this.hopeCheckBox1.UseVisualStyleBackColor = true;
@@ -117,11 +117,11 @@
             // FoxBigLabel1
             // 
             this.FoxBigLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.FoxBigLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F);
+            this.FoxBigLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FoxBigLabel1.ForeColor = System.Drawing.Color.Black;
             this.FoxBigLabel1.Line = ReaLTaiizor.Controls.FoxBigLabel.Direction.Bottom;
             this.FoxBigLabel1.LineColor = System.Drawing.Color.Black;
-            this.FoxBigLabel1.Location = new System.Drawing.Point(191, 3);
+            this.FoxBigLabel1.Location = new System.Drawing.Point(187, 15);
             this.FoxBigLabel1.Name = "FoxBigLabel1";
             this.FoxBigLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.FoxBigLabel1.Size = new System.Drawing.Size(196, 41);

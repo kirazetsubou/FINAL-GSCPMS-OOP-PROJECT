@@ -93,8 +93,6 @@ namespace FINAL_GSCPMS_OOP_PROJECT
             if (!Properties.Settings.Default.PrivacyAccepted && !SessionFlags.PrivacyFormShown)
             {
                 SessionFlags.PrivacyFormShown = true;  // Block repeats
-                var pf = new Privacy();
-                pf.ShowDialog();
             }
             // Load images (from files or Resources)
             imageList.Add(Properties.Resources._509419587_2439523766418370_2887840080118874903_n);
