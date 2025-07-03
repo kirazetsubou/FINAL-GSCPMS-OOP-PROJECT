@@ -25,6 +25,8 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         private const int SB_THUMBPOSITION = 4;
         private float sliderScalingFactor = 1f; // Use float for precision
         private bool isProgrammaticScroll = false;
+        private int lastScrollPos = -1;
+
         public Privacy()
         {
             InitializeComponent();
@@ -32,13 +34,9 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 
         private void Privacy_Load(object sender, EventArgs e)
         {
+            Slider.ValueChanged += Slider_ValueChanged;
 
-            if (!Properties.Settings.Default.PrivacyAccepted && !SessionFlags.PrivacyFormShown)
-            {
-                SessionFlags.PrivacyFormShown = true;  // Block repeats
-                var pf = new Privacy();
-                pf.ShowDialog();
-            }
+           
             Privacypolicy.Text = @"
 📜 Privacy Policy for Patient Management System
 Effective Date: [Insert Date]
@@ -166,35 +164,20 @@ Phone: +63 [your number]
 Address: [Your Office Address]
 
 ";
-            /// Get total scrollable line count
             int maxLines = Privacypolicy.GetLineFromCharIndex(Privacypolicy.TextLength);
 
-            // Set the slider's visual range (keep this low like 10 steps)
-            Slider.MaxValue = 10;
+            // Set the slider's visual range (you can adjust this range visually)
             Slider.MinValue = 0;
+            Slider.MaxValue = 10;
             Slider.Value = 0;
 
-            // Calculate scaling factor (scroll lines per slider step)
-            sliderScalingFactor = Math.Max(1f, maxLines / Slider.MaxValue);  // This avoids divide-by-zero
-
+            // More accurate scaling factor
+            sliderScalingFactor = Math.Max(1f, (float)maxLines / 10f);  // 10f matches MaxValue
 
             Scroll.Start(); // Start timer that updates slider from scroll
         }
 
-        private void Slider_Scroll(object sender, ScrollEventArgs e)
-        {
-            if (!isProgrammaticScroll)
-            {
-                int scrollTarget = (int)(Slider.Value * sliderScalingFactor);
-
-                isProgrammaticScroll = true;
-                SendMessage(Privacypolicy.Handle, WM_VSCROLL,
-                    (IntPtr)(SB_THUMBPOSITION + 0x10000 * scrollTarget), IntPtr.Zero);
-                isProgrammaticScroll = false;
-            }
-
-            ValidateInputs();
-        }
+ 
 
         private void Agree_CheckedChanged(object sender, EventArgs e)
         {
@@ -209,30 +192,41 @@ Address: [Your Office Address]
         {
 
             MessageBox.Show("Consent saved. Proceeding...", "Thank You");
-            Properties.Settings.Default.PrivacyAccepted = true;
-            Properties.Settings.Default.Save();
             this.Close();
         }
 
         private void Scroll_Tick(object sender, EventArgs e)
         {
-            if(!isProgrammaticScroll)
-            {
-                int scrollPos = GetScrollPos(Privacypolicy.Handle, SB_VERT);
-                int scaledValue = (int)(scrollPos / sliderScalingFactor);
+            int scrollPos = GetScrollPos(Privacypolicy.Handle, SB_VERT);
 
-                if (scaledValue >= Slider.MinValue && scaledValue <= Slider.MaxValue)
-                {
-                    isProgrammaticScroll = true;
-                    Slider.Value = scaledValue;
-                    isProgrammaticScroll = false;
-                }
+            // Only update the slider if the RichTextBox was scrolled
+            if (scrollPos != lastScrollPos && !isProgrammaticScroll)
+            {
+                int scaledValue = (int)(scrollPos / sliderScalingFactor);
+                scaledValue = Math.Max((int)Slider.MinValue, Math.Min((int)Slider.MaxValue, scaledValue));
+
+                isProgrammaticScroll = true;
+                Slider.Value = scaledValue;
+                isProgrammaticScroll = false;
+
+                lastScrollPos = scrollPos;
             }
         }
-        public static class SessionFlags
+        private void Slider_ValueChanged(object sender, EventArgs e)
         {
-            public static bool PrivacyFormShown = false;
-        }
+            if (!isProgrammaticScroll)
+            {
+                int scrollTarget = (int)(Slider.Value * sliderScalingFactor);
 
+                isProgrammaticScroll = true;
+                SendMessage(Privacypolicy.Handle, WM_VSCROLL,
+                    (IntPtr)(SB_THUMBPOSITION + 0x10000 * scrollTarget), IntPtr.Zero);
+                isProgrammaticScroll = false;
+
+                lastScrollPos = GetScrollPos(Privacypolicy.Handle, SB_VERT); // prevent override
+            }
+
+            ValidateInputs();
+        }
     }
 }

@@ -50,7 +50,7 @@
             this.Slider.TrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Slider.UpsideDown = false;
             this.Slider.Value = 100F;
-            this.Slider.Scroll += new System.Windows.Forms.ScrollEventHandler(this.Slider_Scroll);
+            this.Slider.ValueChanged += new System.EventHandler(this.Slider_ValueChanged);
             // 
             // Agree
             // 

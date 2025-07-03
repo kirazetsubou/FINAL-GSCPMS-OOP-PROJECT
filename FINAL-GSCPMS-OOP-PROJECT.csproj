@@ -125,6 +125,7 @@
     <Compile Include="Forms\Accounts\Resetpass.Designer.cs">
       <DependentUpon>Resetpass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Accounts\SessionFlags.cs" />
     <Compile Include="Forms\Accounts\Terms.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts.Privacy;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace FINAL_GSCPMS_OOP_PROJECT
@@ -89,6 +90,12 @@ namespace FINAL_GSCPMS_OOP_PROJECT
 
         private void login_Load(object sender, EventArgs e)
         {
+            if (!Properties.Settings.Default.PrivacyAccepted && !SessionFlags.PrivacyFormShown)
+            {
+                SessionFlags.PrivacyFormShown = true;  // Block repeats
+                var pf = new Privacy();
+                pf.ShowDialog();
+            }
             // Load images (from files or Resources)
             imageList.Add(Properties.Resources._509419587_2439523766418370_2887840080118874903_n);
             imageList.Add(Properties.Resources._512215710_996936782380198_6384260421581847698_n);
