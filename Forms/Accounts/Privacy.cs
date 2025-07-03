@@ -211,7 +211,8 @@ Address: [Your Office Address]
         {
 
             MessageBox.Show("Consent saved. Proceeding...", "Thank You");
-            this.Close();
+            Consent back = new Consent();
+            back.Show();
         }
 
         private void Scroll_Tick(object sender, EventArgs e)

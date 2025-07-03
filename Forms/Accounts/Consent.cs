@@ -42,16 +42,17 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
 
         private void Authorize_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.Reset();
             login start = new login();
             start.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             register register = new register();
             register.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -62,6 +63,24 @@ namespace FINAL_GSCPMS_OOP_PROJECT.Forms.Accounts
         }
 
         private void Consent_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void cuiPanel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void cuiPanel3_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {

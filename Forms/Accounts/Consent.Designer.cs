@@ -81,6 +81,7 @@
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(15);
             this.cuiPanel1.Size = new System.Drawing.Size(373, 215);
             this.cuiPanel1.TabIndex = 3;
+            this.cuiPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuiPanel1_MouseDown);
             // 
             // cuiPictureBox1
             // 
@@ -356,6 +357,7 @@
             this.cuiPanel3.Rounding = new System.Windows.Forms.Padding(15);
             this.cuiPanel3.Size = new System.Drawing.Size(360, 63);
             this.cuiPanel3.TabIndex = 25;
+            this.cuiPanel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cuiPanel3_MouseDown);
             // 
             // cuiButton3
             // 
@@ -440,9 +442,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 669);
+            this.Controls.Add(this.dungeonHeaderLabel3);
             this.Controls.Add(this.cuiButton3);
             this.Controls.Add(this.cuiButton2);
-            this.Controls.Add(this.dungeonHeaderLabel3);
             this.Controls.Add(this.nightHeaderLabel1);
             this.Controls.Add(this.smallLabel3);
             this.Controls.Add(this.linkLabel2);
