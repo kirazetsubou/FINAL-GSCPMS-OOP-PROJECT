@@ -455,6 +455,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consent";
             this.Text = "z";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Consent_MouseDown);
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
             this.cuiPanel2.ResumeLayout(false);
