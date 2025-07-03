@@ -206,10 +206,10 @@
             this.Showpass.DisabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.Showpass.Enable = true;
             this.Showpass.EnabledCheckedColor = System.Drawing.Color.DeepSkyBlue;
-            this.Showpass.EnabledStringColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.Showpass.EnabledUncheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(158)))), ((int)(((byte)(161)))));
+            this.Showpass.EnabledStringColor = System.Drawing.Color.DimGray;
+            this.Showpass.EnabledUncheckedColor = System.Drawing.Color.DimGray;
             this.Showpass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.Showpass.ForeColor = System.Drawing.Color.Gray;
             this.Showpass.Location = new System.Drawing.Point(141, 292);
             this.Showpass.Name = "Showpass";
             this.Showpass.Size = new System.Drawing.Size(117, 20);
